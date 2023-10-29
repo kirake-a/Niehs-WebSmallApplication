@@ -1,0 +1,362 @@
+:root {
+    --primario: #155E75;
+    --primarioOscuro: #465362;
+    --secundario: #3185;
+    --secundarioOscuro: #201E50;
+    --verdeBtn: #006D77;
+    --footer: #003E55;
+    --blanco: #FFF;
+    --negro: #000;
+    --arena: #F5F5F2;
+    --sobra: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --font_DM_serif: 'DM Serif Text', serif;
+    --inter: 'Inter', sans-serif;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; 
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/** Globales **/
+body {
+    background-color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+p {
+    font-size: 1.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--blanco);
+    padding: 0.5rem;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
+.w-100{
+    width: 100%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    font-size: 4.2rem;
+}
+h2 {
+    font-size: 3.6rem;
+}
+h3 {
+    font-size: 2.4rem;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+span{
+    font-family: var(--font_DM_serif);
+    width: 100%;
+}
+
+
+/* --------------------------------------------------*/
+/* CSS Properties for mobile devices (smaller than 640px) 
+   + arrange everything in one column below each other
+*/
+.header{
+    background-color: var(--primario);
+    background-image: url('/img/model.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    height: 47rem;
+}
+
+.header_nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.logo {
+    width: 100%;
+    text-align: center;
+}
+
+.logo_texto{
+    font-size: 6rem;
+    color: var(--blanco);
+    margin: 0;
+    text-shadow: var(--sobra);
+}
+
+.contenedor_genero {
+    width: 100%;
+    text-align: center;
+}
+
+.nav_lista {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+
+.nav_lista_elemento{
+    display: inline;
+    width: 50%;
+}
+
+.btn_nav{
+    width: 100%;
+    padding: 0;
+}
+
+.colorBtn-click{
+    background-color: var(--primarioOscuro);
+}
+
+.btn_nav h2{
+    color: var(--blanco);
+    margin: 0;
+    padding: 1rem;
+}
+
+
+.buscador {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.buscador_input {
+   width: 75%;
+   border-width: 0.5px;
+   border-radius: 0.5rem;
+   padding: 0.5rem 3rem;
+}
+
+.buscador_btn {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--primarioOscuro);
+    color: var(--blanco);
+}
+
+.buscador_btn:hover {
+    background-color: var(--secundarioOscuro);
+    color: var(--blanco);
+}
+
+.buscador_input::placeholder{
+    font-family: 'Inter', sans-serif;
+}
+
+.contenedor_carrito_usuario {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    position: absolute;
+}
+
+.carrito a, .usuario_icono a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 0.5rem;
+}
+
+.carrito span, .usuario_icono span{
+    font-size: 3rem;
+    color: var(--blanco);
+}
+
+.nav_principal {
+    background-color: var(--primarioOscuro);
+    width: 100%;
+    position: fixed;
+    left: -100%;
+    transition: all 500ms linear ;
+}
+
+
+.nav_principal::-webkit-scrollbar{
+    width: 2px;
+}
+
+.active {
+    left: 0;
+}
+
+
+.nav_principal_lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+
+.nav_principal_elemento {
+    text-align: center;
+    padding: 0;
+}
+.nav_principal_elemento a {
+    padding: 1rem 0;
+    color: var(--blanco);
+    width: 100%;
+    display: block;
+}
+
+.nav_principal_elemento a:hover {
+    background-color: var(--arena);
+    color: var(--negro);
+}
+
+
+/* Tablet version from 640 pixels */
+/* 640px / 16px /em = 40em */
+
+@media (min-width: 640px){
+
+    .header{
+        background-image: url('/img/model_2-removebg-preview.png'), url('/img/model2.1-removebg-preview.png');
+        background-size: auto, auto;
+        background-position: left top, right top; /* Puedes ajustar la posición de cada imagen */
+        background-repeat: no-repeat, no-repeat;
+        height: auto;
+    }
+
+    .buscador {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .buscador_contenedor{
+        width: 80%;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .buscador_btn {
+        margin: 0;
+        padding: auto;
+    }
+
+    .nav_principal{
+        position: static;
+    }
+
+    .nav_principal_lista{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .nav_principal_elemento a{
+        padding: 1rem 4rem;
+    }
+}
+
+/* Screen from 1024 pixels */
+/* 1024px / 16px/em = 64em */
+@media (min-width: 1024px){
+    .header{
+        background-image: none;
+        height: auto;
+    }
+
+    .header_nav{
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 3fr 0.5fr;
+        width: 100%;
+        height: auto;
+    }
+
+    .logo a h1{
+        font-size: 5rem;
+        padding: 0 1rem;
+    }
+
+    .buscador{
+        grid-column: 3/4;  
+        width: 100%; 
+        display: block;
+    }
+    
+    .buscador_contenedor{
+        width: 100%;
+    }
+
+    .buscador_input {
+        width: 80%;
+    }
+
+    .contenedor_genero {
+        width: 100%;
+        text-align: center;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .btn_nav{
+        padding: 1rem 0;
+    }
+
+    .contenedor_carrito_usuario{
+        width: 100%;
+        position: static;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+}
+
+/* Large screen (>1280 pixels) */
+/* 1280/16px/em = 80em */
+@media (min-width:1280px){
+    
+}
