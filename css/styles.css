@@ -215,6 +215,12 @@ span{
     color: var(--blanco);
 }
 
+.carrito span:hover, .usuario_icono span:hover{
+    font-size: 3rem;
+    color: var(--blanco);
+    text-shadow: var(--sobra);
+}
+
 .nav_principal {
     background-color: var(--primarioOscuro);
     width: 100%;
