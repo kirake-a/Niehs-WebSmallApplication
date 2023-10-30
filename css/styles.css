@@ -149,6 +149,10 @@ span{
     padding: 0;
 }
 
+.btn_nav:hover{
+    text-shadow: var(--sobra);
+}
+
 .colorBtn-click{
     background-color: var(--primarioOscuro);
 }
