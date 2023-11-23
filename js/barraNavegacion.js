@@ -4,7 +4,6 @@ const sidebar = document.getElementById('sidebar');
 let btn_active_hombre = false;
 let btn_active_mujer = false;
 
-
 botones[0].addEventListener("click", function(){
     sidebar.classList.toggle("active");
     botones[0].classList.toggle("colorBtn-click");
