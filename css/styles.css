@@ -18,29 +18,20 @@ html {
     font-size: 62.5%; 
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 /** Globales **/
 body {
     background-color: var(--blanco);
     font-size: 1.6rem;
     line-height: 1.5;
 }
-p {
-    font-size: 1.7rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--blanco);
-    padding: 0.5rem;
-    margin: 0;
-}
+
 a {
     text-decoration: none;
 }
 img {
     width: 100%;
 }
+
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
@@ -62,19 +53,8 @@ img {
     text-align: center;
 }
 
-h1, h2, h3 {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
-h1 {
+.h-1 {
     font-size: 4.2rem;
-}
-h2 {
-    font-size: 3.6rem;
-}
-h3 {
-    font-size: 2.4rem;
 }
 
 button {
@@ -98,24 +78,26 @@ span{
 */
 .header{
     background-color: var(--primario);
-    background-image: url('/img/model.png');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: cover;
-    height: 47rem;
+    height: auto;
 }
 
 .header_nav{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 3fr 0.5fr;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
 }
 
+
 .logo {
     width: 100%;
     text-align: center;
+}
+.logo a h1{
+    font-size: 5rem;
+    padding: 0 1rem;
 }
 
 .logo_texto{
@@ -130,7 +112,10 @@ span{
     height: 100%;
     text-align: center;
     align-items: center;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
+
 
 .nav_lista {
     list-style: none;
@@ -154,6 +139,7 @@ span{
     font-size: 3.6rem;
     color: var(--blanco);
     display: block;
+    padding: 1rem 0;
 }
 
 
@@ -167,9 +153,13 @@ span{
 
 
 .buscador {
+    grid-column: 3/4;  
+    width: 100%; 
+    display: block;
+}
+
+.buscador_contenedor{
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .buscador_input {
@@ -210,9 +200,10 @@ span{
 
 .contenedor_carrito_usuario {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     width: 100%;
-    position: absolute;
+    position: static;
+    padding: 0;
 }
 
 .carrito a, .usuario_icono a{
@@ -239,7 +230,7 @@ span{
 .nav_principal {
     background-color: var(--primarioOscuro);
     width: 100%;
-    position: fixed;
+    position: static;
     left: -100%;
     transition: all 500ms linear ;
 }
@@ -256,7 +247,10 @@ span{
 .nav_principal_lista{
     list-style: none;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0px;
     padding: 0;
     margin: 0;
 }
@@ -266,7 +260,7 @@ span{
     padding: 0;
 }
 .nav_principal_elemento a {
-    padding: 1rem 0;
+    padding: 1rem 4rem;
     color: var(--blanco);
     width: 100%;
     display: block;
@@ -277,109 +271,97 @@ span{
     color: var(--negro);
 }
 
+/* FOOTER */
 
-/* Tablet version from 640 pixels */
-/* 640px / 16px /em = 40em */
-
-@media (min-width: 640px){
-
-    .header{
-        background-image: url('/img/model_2-removebg-preview.png'), url('/img/model2.1-removebg-preview.png');
-        background-size: auto, auto;
-        background-position: left top, right top; /* Puedes ajustar la posición de cada imagen */
-        background-repeat: no-repeat, no-repeat;
-        height: auto;
-    }
-
-    .buscador {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end;
-    }
-
-    .buscador_contenedor{
-        width: 90%;
-        padding: 0;
-        margin-left: 0;
-    }
-
-    .buscador_btn {
-        margin: 0;
-        padding: auto;
-    }
-
-    .nav_principal{
-        position: static;
-    }
-
-    .nav_principal_lista{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0px;
-    }
-
-    .nav_principal_elemento a{
-        padding: 1rem 4rem;
-    }
+h1.niehs{
+    text-align: center;
+    font-size: 7rem;
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.30);
+    font-weight: 400;
+    margin: 0;
 }
 
-/* Screen from 1024 pixels */
-/* 1024px / 16px/em = 64em */
-@media (min-width: 1024px){
-    .header{
-        background-image: none;
-        height: auto;
-    }
-
-    .header_nav{
-        display: grid;
-        grid-template-columns: 0.5fr 2fr 3fr 0.5fr;
-        width: 100%;
-        height: auto;
-    }
-
-    .logo a h1{
-        font-size: 5rem;
-        padding: 0 1rem;
-    }
-
-    .buscador{
-        grid-column: 3/4;  
-        width: 100%; 
-        display: block;
-    }
-    
-    .buscador_contenedor{
-        width: 100%;
-    }
-
-    .buscador_input {
-        width: 80%;
-    }
-
-    .contenedor_genero {
-        width: 100%;
-        text-align: center;
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-
-    .btn_nav{
-        padding: 1rem 0;
-    }
-
-    .contenedor_carrito_usuario{
-        width: 100%;
-        position: static;
-        justify-content: space-evenly;
-        padding: 0;
-    }
-
+.nav_mi_cuenta, .titulo_nav{
+    font-family: var(--font_DM_serif);
+    color: var(--blanco);
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+}
+.mi_cuenta_contenedor h2, .footer_titulo_nav h2{
+    font-size: 3rem;
 }
 
-/* Large screen (>1280 pixels) */
-/* 1280/16px/em = 80em */
-@media (min-width:1280px){
-    
+.nav_lista_mi_cuenta{
+    list-style: none;
+    text-align: start;
+    font-size: 3rem;
 }
+
+.nav_lista_navegacion{
+    list-style: none;
+    text-align: start;
+    font-size: 3rem;
+}
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: var(--footer);
+}
+
+.footer_micuenta_nav{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer_niehs{
+    height: 50%;
+}
+
+.footer_titulo_nav{
+    width: 100%;
+}
+
+.nav_lista_navegacion{
+    list-style: none;
+    padding: 0 3rem;
+    margin: 0;
+}
+
+.footer_Nies_Img{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer_tarjetas{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    height: 25%;
+}
+
+.footer_niehs{
+    justify-items: center;
+    color: #FFF;
+    padding: auto;
+}
+
+p.lista_elemento{
+    font-family: sans-serif;
+    color: var(--blanco);
+    font-size: 1.5rem;
+}
+
+img{
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+
