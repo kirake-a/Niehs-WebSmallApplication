@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;600&display=swap');
+
+.main-frame {
+    width: 920px;
+    height: 530px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
+    position: relative; /*Para permitir la posicion absoluta del boton*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.icon-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.icon-container .material-symbols-outlined {
+    font-size: 120px;
+}
+
+.button-content {
+    position: absolute;
+    bottom: 40px; /*Ajusta la distancia con la parte inferior*/
+    width: 100%;
+    text-align: center; /*Centrar horizontalmente el boton*/
+}
+
+.button-content a {
+    display: inline-block;
+    padding: 20px 30px;
+    background-color: #006D77;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+}
+
+.button-content a:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.text-container {
+    position: absolute;
+    bottom: 150px;
+    width: 100%;
+    text-align: center;
+}
+
+.text-main p {
+    font-family: 'DM Serif Text', serif;
+    font-size: 50px;
+    color: black;
+}
+
+.text-explanation p {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    color: black;
+}
+
+.text-main p {
+    margin: 20px 10px 20px 10px;
+}
+
+.text-explanation p {
+    margin: 20px;
+}
