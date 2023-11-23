@@ -1,0 +1,246 @@
+/** products style **/
+
+:root {
+    --primario: #155E75;
+    --primarioOscuro: #465362;
+    --secundario: #3185;
+    --secundarioOscuro: #201E50;
+    --verdeBtn: #006D77;
+    --footer: #003E55;
+    --blanco: #FFF;
+    --negro: #000;
+    --arena: #F5F5F2;
+    --sobra: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --font_DM_serif: 'DM Serif Text', serif;
+    --inter: 'Inter', sans-serif;
+}
+
+.text-explanation{
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 550;
+    color: black;
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.main-frame {
+    width: 1200px;
+    height: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
+    position: relative; /*Para permitir la posicion absoluta del boton*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0.9;
+}
+
+.button-content{
+    padding: 10px 20px;
+    background-color: #006D77;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+    border-width: 0px;
+}
+
+.file-input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.file-input {
+    display: none;
+}
+
+.file-label {
+    padding: 10px 20px;
+    background-color: #006D77;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 550;
+    cursor: pointer;
+}
+
+.file-input:checked + .file-label::before {
+    content: "Archivo seleccionado: ";
+}
+
+
+.button-content:hover, .file-label:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+.button-content:active, .file-label:active {
+    background-color: var(--secundarioOscuro); 
+    transform: translateY(2px); 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2); 
+    outline: none; 
+}
+
+.contenedor-atributo-imagen{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 40%;
+    height: 93%;
+    margin: 20px;
+}
+
+.contenedor-boton-imagen{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    width: 80%;
+    height: 15%;
+
+}
+
+.contenedor-imagen{
+    width: 80%;
+    height: 80%;
+    align-content: center;
+    background-color:rgb(216, 228, 236);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    background-size: cover;
+}
+
+.contenedor-atributos{
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 60%;
+    height: 93%;
+    margin: 20px;
+}
+
+.contenedor-superior{
+    display:flex;
+    justify-content: right;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+}
+
+.contenedor-id{
+    width: 60%;
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color:#465362;
+    opacity: 0.5;
+}
+
+.id{
+    border:0px;
+}
+
+.contenedor-boton-salir{
+    display:flex;
+    justify-content: right;
+    width: 40%;
+    height: 100%;
+    
+}
+
+.contenedor-boton-salir span{
+    font-size: 3rem;
+    color: var(--primarioOscuro);
+}
+
+.contenedor-boton-salir span:hover{
+    font-size: 3rem;
+    color: var(--primario);
+    text-shadow: var(--sobra);
+}
+
+.contenedor-atributo-tipo{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+.nombre-atributo{
+    width: 30%;
+    height: 100%;
+}
+
+.contenido-atributo{
+    display:flex;
+    justify-content: left;
+    margin-top: 5px;
+    width: 60%;
+    height: 80%;
+}
+
+.seleccion{
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    border:#000 1px solid;
+    width: 80%;
+    resize:none;
+    overflow: auto;
+}
+
+.contenedor-atributo-talla{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+.contenedor-atributo-genero{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+.contenedor-atributo-descripcion{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+}
+
+.contenedor-atributo-color{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+.contenedor-atributo-precio{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+.contenedor-atributo-existencia{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    height: 10%;
+}
+
+.contenedor-boton-atributos{
+    width: 100%;
+    height: 15%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+}

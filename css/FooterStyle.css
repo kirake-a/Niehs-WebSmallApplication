@@ -1,0 +1,138 @@
+:root {
+    --primario: #155E75;
+    --primarioOscuro: #465362;
+    --secundario: #3185;
+    --secundarioOscuro: #201E50;
+    --verdeBtn: #006D77;
+    --footer: #003E55;
+    --blanco: #FFF;
+    --negro: #000;
+    --arena: #F5F5F2;
+    --sobra: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --font_DM_serif: 'DM Serif Text', serif;
+    --inter: 'Inter', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    margin: 0;
+}
+
+h1.niehs{
+    text-align: center;
+    font-size: 6.5rem;
+    text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.30);
+    font-weight: 400;
+}
+
+.nav_mi_cuenta, .nav_navegacion{
+    font-family: var(--font_DM_serif);
+    color: var(--blanco);
+    font-size: 2rem;
+}
+
+p.lista_elemento{
+    font-family: sans-serif;
+    color: var(--blanco);
+    font-size: 1rem;
+}
+
+p.copyright{
+    font-family: sans-serif;
+    color: var(--blanco);
+    font-size: 1rem;
+}
+img{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.footer{
+    grid-column: 1/11;
+    grid-row: 2/3;
+
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: 40% 40% 20%;
+
+    background-color: var(--footer);
+}
+
+.footer_nav{
+    grid-column: 1/8;
+    grid-row: 1/3;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: 30% 70%;
+}
+
+.nav_mi_cuenta{
+    grid-column: 2/4;
+    grid-row: 1/2;
+
+}
+
+.nav_lista_mi_cuenta{
+    list-style-type: none;
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.nav_navegacion{
+    grid-column: 6/9;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_lista1_navegacion{
+    list-style-type: none;
+    grid-column: 6/8;
+    grid-row: 2/3;
+}
+
+.nav_lista2_navegacion{
+    list-style-type: none;
+    grid-column: 8/11;
+    grid-row: 2/3;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+ul{
+    padding-inline-start: 0;
+}
+
+
+.footer_copyright{
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+
+.footer_tarjetas{
+    grid-column: 8/11;
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_niehs{
+    grid-column: 8/11;
+    grid-row: 1/3;
+    justify-items: center;
+    color: #FFF;
+}
+
+img{
+    height: 50%;
+}
