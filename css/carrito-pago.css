@@ -1,0 +1,190 @@
+:root {
+    --primario: #155E75;
+    --primarioOscuro: #465362;
+    --secundario: #3185;
+    --secundarioOscuro: #201E50;
+    --verdeBtn: #006D77;
+    --footer: #003E55;
+    --blanco: #FFF;
+    --negro: #000;
+    --arena: #F5F5F2;
+    --sobra: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --font_DM_serif: 'DM Serif Text', serif;
+    --inter: 'Inter', sans-serif;
+}
+
+
+.metodos-pago{
+    position: absolute;
+    top: 30rem;
+    right: 20rem;
+    width: 25rem;
+    font-size: 25px;
+
+}
+
+.texto-pago{
+    border-bottom: 1px solid var(--negro) ;
+    font-family: var(--inter);
+}
+
+.pago-tarjeta{
+    margin-top: 1rem;
+    border-bottom: 1px solid var(--negro);
+    padding-bottom: 0;
+}
+
+.pago-tarjeta-boton{
+    display: flex;
+    justify-content: space-between;
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+.pago-tarjeta-texto{
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.pago-tarjeta-imagen{
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 4rem;
+    font-family: var(--inter);
+    margin-left: 8rem;
+    
+}
+
+.pago-paypal{
+    margin-top: 1rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--negro);
+}
+
+.pago-paypal-boton{
+    background: none;
+    border: none;
+}
+
+.pago-paypal-imagen{
+    height: 3rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.por-pagar{
+    position: absolute;
+    top: 10rem;
+    right: 15rem;
+    text-align: center;
+    box-shadow: 10px 10px 60px var(--negro);
+    font-family: var(--inter);
+}
+
+.total{
+    display: flex;
+    justify-content: space-between;
+    width: 30rem;
+    height: 3rem;
+}
+
+.total-texto{
+    padding-left: 2rem;
+    font-weight: 600;
+}
+
+.total-cantidad, .fondos-cantidad, .restante-cantidad{
+    padding-right: 4rem;
+    margin-left: auto;
+}
+
+.fondos-texto{
+    padding-left: 2rem;
+    font-weight: 600;
+}
+
+
+.boton-pagar{
+    border-radius: 15px;
+    width: 15rem;
+    margin-bottom: 1rem;
+    background-color: var(--verdeBtn);
+    padding: 10px 20px;
+    color: var(--blanco);
+}
+
+.restante-texto{
+    padding-left: 2rem;
+    font-weight: 600;
+}
+
+
+.fondos{
+    display: flex;
+}
+
+.restante{
+    display: flex;
+}
+
+.carrito{
+    position: absolute;
+    top: 10rem;
+    left: 10rem;
+    width: 30rem;
+    height: 30rem;
+
+    background: var(--blanco); 
+    box-shadow: 10px 10px 60px;
+
+    overflow-y: scroll;
+}
+
+.producto{
+    width: 25rem;
+    display: flex; 
+}
+
+
+
+.imagen-producto{
+    width: 10rem;
+}
+
+.producto-detalles{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--inter);
+}
+
+.producto-descripcion{
+    font-size: 15px;
+}
+
+.producto-cantidad{
+    font-size: 25px;
+}
+
+.producto-detalles-finales{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.producto-boton-eliminar{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.producto-boton-eliminar, .boton-pagar, .pago-tarjeta-boton, .pago-paypal-boton{
+    cursor: pointer;
+}
+
+

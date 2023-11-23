@@ -1,3 +1,5 @@
+/** products style **/
+
 :root {
     --primario: #155E75;
     --primarioOscuro: #465362;
@@ -138,6 +140,10 @@
     font-size: 15px;
     color:#465362;
     opacity: 0.5;
+}
+
+.id{
+    border:0px;
 }
 
 .contenedor-boton-salir{

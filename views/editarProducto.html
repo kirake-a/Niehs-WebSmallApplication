@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Editar producto</title>
+    <title>Producto</title>
 
     <!--Estilos del header-->
     <link rel="stylesheet" href="/css/normalize.css">
@@ -12,7 +12,7 @@
 
     <!--Estilos de la vista editar producto-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="../styles/editarProducto.css">
+    <link rel="stylesheet" href="../css/editarProducto.css">
 </head>
 <body>
     <header class="header">
@@ -56,7 +56,8 @@
             <div class="contenedor-atributos">
                 <div class="contenedor-superior">
                     <div class="contenedor-id">
-                        <h3>ID:</h3><h3 id="id_producto"></h3>
+                        <label for="id_producto">ID: </label>
+                        <input type="text" id="id_producto" class="id" readonly>
                     </div>
                     <div class="contenedor-boton-salir">
                         <a href="">
@@ -71,12 +72,12 @@
                     <div class="contenido-atributo">
                         <select class="seleccion" id=tipo_producto>
                             <option value="NULL"></option>
-                            <option value="CONJUNTO">CONJUNTO</option>
-                            <option value="ROPA DEPORTIVA">ROPA DEPORTIVA</option>
-                            <option value="SUDADERA">SUDADERA</option>
-                            <option value="CHAQUETA/ABRIGO">CHAQUETA/ABRIGO</option>
-                            <option value="ACCESORIO">ACCESORIO</option>
-                            <option value="ROPA INTERIOR">ROPA INTERIOR</option>
+                            <option value="CONJUNTO">Conjunto</option>
+                            <option value="ROPA DEPORTIVA">Ropa deportiva</option>
+                            <option value="SUDADERA">Sudadera</option>
+                            <option value="CHAQUETA/ABRIGO">Chaqueta/Abrigo</option>
+                            <option value="ACCESORIO">Accesorio</option>
+                            <option value="ROPA INTERIOR">Ropa interior</option>
                         </select>
                     </div>
                 </div>
@@ -85,10 +86,9 @@
                     <div class="contenido-atributo">
                         <select class="seleccion" id=talla_producto>
                             <option value="NULL"></option>
-                            <option value="SMALL">S</option>
+                            <option value="SMALL">C</option>
                             <option value="MEDIA">M</option>
-                            <option value="LARGE">L</option>
-                            <option value="EXTRA LARGE">XL</option>
+                            <option value="LARGE">G</option>
                         </select>
                     </div>
                 </div>
@@ -97,8 +97,8 @@
                     <div class="contenido-atributo">
                         <select class="seleccion" id=genero_producto>
                             <option value="NULL"></option>
-                            <option value="FEMENINO">FEMENINO</option>
-                            <option value="MASCULINO">MASCULINO</option>
+                            <option value="MUJER">MUJER</option>
+                            <option value="HOMBRE">HOMBRE</option>
                         </select>
                     </div>
                 </div>
