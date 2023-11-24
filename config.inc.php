@@ -4,5 +4,5 @@ $GLOBALS["user"] = "root";
 $GLOBALS["password"] = "";
 $GLOBALS["database"] = "catalogo";
 
-$GLOBALS["root_site"] = "http://localhost/control/";
+$GLOBALS["root_site"] = "http://localhost/niehs/";
 ?>
