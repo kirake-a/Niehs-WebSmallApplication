@@ -1,0 +1,139 @@
+:root {
+    --primario: #155E75;
+    --primarioOscuro: #465362;
+    --secundario: #3185;
+    --secundarioOscuro: #201E50;
+    --verdeBtn: #006D77;
+    --footer: #003E55;
+    --blanco: #FFF;
+    --negro: #000;
+    --arena: #F5F5F2;
+    --sobra: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    --font_DM_serif: 'DM Serif Text', serif;
+    --inter: 'Inter', sans-serif;
+}
+
+
+
+
+.main-frame{
+    height: 70rem;
+}
+
+.imagen{
+    margin-top: 5rem;
+    width: 60rem;
+    margin-left: 20rem;
+}
+
+
+
+.detalles{
+    position: absolute;
+    left: 60%;
+    top: 20%;
+    
+}
+
+.descripcion-producto{
+    font-family: var(--inter);
+    font-size: 20px;
+
+}
+
+.precio-producto{
+    font-family: var(--inter);
+    font-size: 32px;
+}
+
+.color{
+    display: flex;
+    
+}
+
+.color-texto{
+    font-family: var(--inter);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.color-producto{
+    font-size: 20px;
+    margin-left: 1rem;
+}
+
+.talla-producto{
+    font-weight: 700;
+    font-size: 20px;
+    font-family: var(--inter);
+}
+
+.select-talla{
+    width: 35rem;
+    height: 4rem;
+    
+}
+
+.boton{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+.boton-agregar{
+    background-color: var(--verdeBtn);
+    width: 100%;
+    color: white;
+    font-family: var(--inter);
+    font-weight: 700;
+    height: 5rem;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.servicios{
+    margin-top: 1rem;
+    border: 1px;
+    border-color: #B1B1B1;
+    border-style: solid;
+}
+
+.detalles-envio{
+    display: flex;
+}
+
+.envio{
+    font-size: 15px;
+    font-family: var(--inter);
+    margin-left: 1rem;
+}
+
+.imagen-envio{
+    height: auto;
+    width: auto;
+    margin-left: 1rem;
+}
+
+.detalles-devoluciones{
+    display: flex;
+}
+
+.devoluciones{
+    font-size: 15px;
+    font-family: var(--inter);
+    margin-left: 1rem;
+}
+
+.imagen-devoluciones{
+    height: auto;
+    width: auto;
+    margin-left: 1rem;
+}
+
+.politicas{
+    font-size: 15px;
+    font-family: var(--inter);
+    margin-left: 1rem;
+    margin-right: 1rem;
+}

@@ -13,25 +13,31 @@
     --inter: 'Inter', sans-serif;
 }
 
+.main-frame{
+    height: 70rem;
+    
+}
 
 .metodos-pago{
     position: absolute;
-    top: 30rem;
-    right: 20rem;
-    width: 25rem;
-    font-size: 25px;
+    top: 30em;
+    right: 20em;
+    width: 25em;
+    
 
 }
 
 .texto-pago{
     border-bottom: 1px solid var(--negro) ;
     font-family: var(--inter);
+    font-size: 25px;
 }
 
 .pago-tarjeta{
-    margin-top: 1rem;
+    margin-top: 1em;
     border-bottom: 1px solid var(--negro);
     padding-bottom: 0;
+    align-items: center;
 }
 
 .pago-tarjeta-boton{
@@ -43,21 +49,25 @@
 }
 
 .pago-tarjeta-texto{
-    padding-bottom: 0;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    white-space: nowrap;
+    align-self: center;
+    
 }
 
 .pago-tarjeta-imagen{
     padding-bottom: 0;
-    margin-bottom: 0;
-    height: 4rem;
+    margin: 0;
+    height: 3em;
     font-family: var(--inter);
-    margin-left: 8rem;
+    margin-left: 3em;
     
 }
 
 .pago-paypal{
-    margin-top: 1rem;
+    margin-top: 1em;
     padding-bottom: 0;
     margin-bottom: 0;
     border-bottom: 1px solid var(--negro);
@@ -69,15 +79,15 @@
 }
 
 .pago-paypal-imagen{
-    height: 3rem;
+    height: 3em;
     padding-bottom: 0;
     margin-bottom: 0;
 }
 
 .por-pagar{
     position: absolute;
-    top: 10rem;
-    right: 15rem;
+    top: 10em;
+    right: 15em;
     text-align: center;
     box-shadow: 10px 10px 60px var(--negro);
     font-family: var(--inter);
@@ -86,37 +96,37 @@
 .total{
     display: flex;
     justify-content: space-between;
-    width: 30rem;
-    height: 3rem;
+    width: 30em;
+    height: 3em;
 }
 
 .total-texto{
-    padding-left: 2rem;
+    padding-left: 2em;
     font-weight: 600;
 }
 
 .total-cantidad, .fondos-cantidad, .restante-cantidad{
-    padding-right: 4rem;
+    padding-right: 4em;
     margin-left: auto;
 }
 
 .fondos-texto{
-    padding-left: 2rem;
+    padding-left: 2em;
     font-weight: 600;
 }
 
 
 .boton-pagar{
     border-radius: 15px;
-    width: 15rem;
-    margin-bottom: 1rem;
+    width: 15em;
+    margin-bottom: 1em;
     background-color: var(--verdeBtn);
     padding: 10px 20px;
     color: var(--blanco);
 }
 
 .restante-texto{
-    padding-left: 2rem;
+    padding-left: 2em;
     font-weight: 600;
 }
 
@@ -131,10 +141,10 @@
 
 .carrito{
     position: absolute;
-    top: 10rem;
-    left: 10rem;
-    width: 30rem;
-    height: 30rem;
+    top: 10em;
+    left: 10em;
+    width: 30em;
+    height: 30em;
 
     background: var(--blanco); 
     box-shadow: 10px 10px 60px;
@@ -143,18 +153,20 @@
 }
 
 .producto{
-    width: 25rem;
+    width: 25em;
     display: flex; 
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
 
 
 .imagen-producto{
-    width: 10rem;
+    width: 10em;
 }
 
 .producto-detalles{
-    width: 20rem;
+    width: 20em;
     display: flex;
     flex-direction: column;
     font-family: var(--inter);
