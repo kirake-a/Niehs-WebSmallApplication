@@ -3,17 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito vacío</title>
+    <title>Catalogo general</title>
 
     <!--Estilos del header-->
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos del carrito vacio-->
-    <link rel="stylesheet" href="../css/carritoVacio.css">
+    <link rel="stylesheet" href="../css/catalogoGeneral.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    
 </head>
 <body>
 
@@ -104,27 +103,47 @@
         </nav>
         
     </header>
-
     <main>
-        <section class="main-frame">
-            <div class="icon-container">
-                <span class="material-symbols-outlined">
-                    shopping_bag
-                </span>
+        <div class="contenedor">
+            <div class="rectangulo-contenedor">
+                <a href="#">
+                  <div class="rectangulo" id="imagenProducto1">
+                    <div class="rectangulo-azul">
+                      <div class="precio" id="precioProducto1">$750</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="descripcion-contenedor" id="descripcionProducto1">DESCRIPCION DEL PRODUCTO</div>
+                </a>
             </div>
-            <div class="text-container">
-                <div class="text-main">
-                    <p>¡Tu carrito de Niehs está vacío!</p>
-                </div>
-                <div class="text-explanation">
-                    <p>Tu carrito de compras vive para servirte. <br>Dale un propósito y llénalo de provisiones.</p>
-                </div>
+            
+            <div class="rectangulo-contenedor">
+                <a href="#">
+                  <div class="rectangulo" id="imagenProducto2">
+                    <div class="rectangulo-azul">
+                      <div class="precio" id="precioProducto2">$750</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="descripcion-contenedor" id="descripcionProducto2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl lorem, gravida a auctor non.</div>
+                </a>
             </div>
-            <div class="button-content">
-                <a href="#">Descubrir productos</a>
+            
+            <div class="rectangulo-contenedor">
+                <a href="#">
+                  <div class="rectangulo" id="imagenProducto3">
+                    <div class="rectangulo-azul">
+                      <div class="precio" id="precioProducto3">$750</div>
+                    </div>
+                  </div>
+                </a>
+                <a href="">
+                  <div class="descripcion-contenedor" id="descripcionProducto3">DESCRIPCION MUY LARGA DEL PRODUCTO QUE PODRIA ARRUINAR LA ALINEACION</div>
+                </a>
             </div>
-        </section>
-        
+        </div>
     </main>
 
     <div class="grid">
@@ -198,6 +217,6 @@
             </div>
         </footer>
     </div>
-    <script src="/js/barraNavegacion.js"></script>
+    <script src="../js/barraNavegacion.js"></script>
 </body>
 </html>

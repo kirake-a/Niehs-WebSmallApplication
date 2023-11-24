@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;600&display=swap');
+
+.contenedor {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rectangulo-contenedor {
+    margin-top: 100px;
+    position: relative;
+}
+
+.rectangulo {
+    width: 254px;
+    height: 350px;
+    background-color: #D4D4D4;
+    position: relative;
+}
+
+.rectangulo-azul {
+    width: 96px;
+    height: 32px;
+    background-color: #3185A1;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+}
+
+.precio {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    color: white;
+}
+
+.descripcion-contenedor {
+    /* texto */
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: black;
+    /* contenedor */
+    width: 254px;
+    padding: 5px;
+    margin-bottom: 100px;
+}
