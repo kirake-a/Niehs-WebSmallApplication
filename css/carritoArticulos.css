@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;600&display=swap');
+
+.container {
+    margin: 60px;
+}
+
+.resumen-pago {
+    width: 495px;
+    height: 384px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+    left: 1200px;
+    bottom: 660px;
+    display: flex;
+    padding: 20px;
+}
+
+.subtotal, .iva, .total {
+    font-family: "Inter", sans-serif;
+    font-size: 25px;
+    font-weight: 550;
+}
+
+.pay {
+    position: absolute;
+    bottom: 31px;
+    text-align: center;
+    width: 402px;
+    height: 72px;
+    border-radius: 15px;
+    background-color: #006D77;
+    font-family: "Inter", sans-serif;
+    font-size: 30px;
+    font-weight: 550;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.pay-container {
+    margin: auto;
+}
+
+.pay:hover {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.productos {
+    width: 1000px;
+    height: 662px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.title {
+    text-align: center;
+    margin: 50px;
+    font-family: 'DM Serif Text', serif;
+    font-size: 30px;
+}
