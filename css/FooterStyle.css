@@ -54,12 +54,13 @@ img{
     margin-left: 5px;
 }
 
+/*
 .grid{
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-template-rows: 70% 30%;
     height: 100vh;
-}
+}*/
 
 .footer{
     grid-column: 1/11;
