@@ -67,11 +67,6 @@ a:hover {
     cursor: pointer;
 }
 
-span{
-    font-family: var(--font_DM_serif);
-    width: 100%;
-}
-
 
 /* --------------------------------------------------*/
 /* CSS Properties for mobile devices (smaller than 640px) 
@@ -170,20 +165,27 @@ span{
    padding: 1rem 4rem;
 }
 
-.buscador_contenedor div{
+.buscador_contenedor{
     display: flex;
     align-items: center;
-    gap: 1rem;
     position: relative;
 }
 
-.buscador_contenedor div span{
+.buscador_contenedor .material-symbols-outlined{
     position: absolute;
     left: 1rem;
     color: grey;
+    width: 5%;
+}
+
+.material-symbols-outlined{
+    left: 1rem;
+    color: grey;
+    width: 5%;
 }
 
 .buscador_btn {
+    margin: 0 1rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
     background-color: var(--primarioOscuro);
@@ -201,19 +203,17 @@ span{
 
 .contenedor_carrito_usuario {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
-    position: static;
     padding: 0;
 }
 
 .carrito a, .usuario_icono a{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
-    position: relative;
     top: 0.5rem;
 }
 
@@ -231,14 +231,6 @@ span{
 .nav_principal {
     background-color: var(--primarioOscuro);
     width: 100%;
-    position: static;
-    left: -100%;
-    transition: all 500ms linear ;
-}
-
-
-.nav_principal::-webkit-scrollbar{
-    width: 2px;
 }
 
 .active {
@@ -247,30 +239,29 @@ span{
 
 .nav_principal_lista{
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 0px;
-    padding: 0;
     margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-.nav_principal_elemento {
-    text-align: center;
-    padding: 0;
-}
-.nav_principal_elemento a {
-    padding: 1rem 4rem;
-    color: var(--blanco);
+.nav_principal_elemento{
+    background-color: var(--primarioOscuro);
     width: 100%;
+    text-align: center;
+}
+
+.nav_principal_elemento a {
+    color: var(--blanco);
+    padding: 0.6em 2rem;
     display: block;
 }
 
-.nav_principal_elemento a:hover {
+.nav_principal_elemento a:hover, .nav_principal_elemento a:focus{
     background-color: var(--arena);
     color: var(--negro);
 }
+
 
 /* FOOTER */
 
