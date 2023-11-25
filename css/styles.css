@@ -1,4 +1,3 @@
-
 :root {
     --primario: #155E75;
     --primarioOscuro: #465362;
@@ -267,7 +266,7 @@ a:hover {
 
 h1.niehs{
     text-align: center;
-    font-size: 7rem;
+    font-size: 7em;
     text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.30);
     font-weight: 400;
     margin: 0;
@@ -276,24 +275,24 @@ h1.niehs{
 .nav_mi_cuenta, .titulo_nav{
     font-family: var(--font_DM_serif);
     color: var(--blanco);
-    font-size: 2rem;
+    font-size: 2em;
     text-align: center;
     display: block;
 }
 .mi_cuenta_contenedor h2, .footer_titulo_nav h2{
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .nav_lista_mi_cuenta{
     list-style: none;
     text-align: start;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .nav_lista_navegacion{
     list-style: none;
     text-align: start;
-    font-size: 3rem;
+    font-size: 3em;
 }
 
 .footer{
@@ -355,5 +354,3 @@ p.lista_elemento{
 img{
     margin: 0.5rem 1rem 0.5rem 0;
 }
-
-

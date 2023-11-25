@@ -3,62 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito pago</title>
+    <title>Producto</title>
+    <link rel="stylesheet" href="/css/producto.css">
 
-    <link rel="stylesheet" href="/css/carrito-pago.css">
+    
 </head>
 <body>
-
-    <div class="header-contenedor"></div>
-
-    <div class="main-frame">
-    <div class="carrito">
-        <div class="producto">
-            <div class="producto-imagen">
-                <img src="/imagenes/productos/hombre/accesorios/accesorioHombre1.jpg" class="imagen-producto">
-            </div>
-            <div class="producto-detalles">
-                <p class="producto-descripcion">Descripcion</p>
-                <p class="producto-cantidad">0$</p>
-                <div class="producto-detalles-finales">
-                    <p class="producto-texto-cantidad">Cantidad: 0</p>
-                    <button class="producto-boton-eliminar">Eliminar</button>  
-                </div>             
-            </div>
-        </div>
+   <div class="header-contenedor"></div>
+   
+   <div class="main-frame">
+    <div class="imagen">
+        <img src="/imagenes/productos/hombre/accesorios/accesorioHombre1.jpg" class="imagen-producto">
     </div>
-    <div class="por-pagar">
-        <div class="total">
-            <p class="total-texto">Total:</p>
-            <p class="total-cantidad">$0</p>
+    <div class="detalles">
+        <p class="descripcion-producto">Descripcion</p>
+        <p class="precio-producto">$ 0</p>
+        <div class="color">
+            <p class="color-texto">Color: </p>
+            <p class="color-producto">Azul</p>
         </div>
-        <div class="fondos">
-            <p class="fondos-texto">Fondos disponibles:</p>
-            <p class="fondos-cantidad">$0</p>
-        </div>
-        <div class="restante">
-            <p class="restante-texto">Total restante:</p>
-            <p class="restante-cantidad">$0</p>
+        <div class="talla">
+            <p class="talla-producto">Talla:</p>
+            <select class="select-talla">
+                <option value="NULL"></option>
+                <option value="SMALL">S</option>
+                <option value="MEDIA">M</option>
+                <option value="LARGE">L</option>
+                <option value="EXTRA LARGE">XL</option>
+            </select>
         </div>
         <div class="boton">
-            <button class="boton-pagar">Pagar</button>
+            <button class="boton-agregar">AÑADIR A MI CARRITO</button>
         </div>
-    </div>
-    <div class="metodos-pago">
-        <div class="texto-pago">Selecciona la forma de pago</div>
-        <div class="pago-tarjeta">
-            <button class="pago-tarjeta-boton">
-                <p class="pago-tarjeta-texto">Tarjeta de crédito</p>
-                <img src="/imagenes/footer/ImagenTarjetaCredito.png" class="pago-tarjeta-imagen">
-            </button>
+        <div class="servicios">
+            <div class="detalles-envio">
+                <img src="/imagenes/tabler_truck-delivery.jpg" class="imagen-envio">
+                <p class="envio">Envío gratis</p>
+            </div>
+            <div class="detalles-devoluciones">
+                <img src="/imagenes/carbon_delivery-parcel.jpg" class="imagen-devoluciones">
+                <p class="devoluciones">Devoluciones gratis</p>
+            </div>
+            <p class="politicas">Consulte la política de envíos y devoluciones</p>
         </div>
-        <div class="pago-paypal">
-            <button class="pago-paypal-boton">
-                <img src="/imagenes/footer/ImagenSimboloPaypal.png" class="pago-paypal-imagen">
-            </button>
-            
-        </div>
-        
     </div>
     </div>
 
@@ -133,6 +120,7 @@
             </div>
         </footer>
     </div>
+
     <script src="/js/header.js"></script>
+    
 </body>
-</html>

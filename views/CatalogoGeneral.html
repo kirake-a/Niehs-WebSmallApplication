@@ -5,10 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo general</title>
 
-    <!--Estilos del header-->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos del carrito vacio-->
     <link rel="stylesheet" href="../css/catalogoGeneral.css">
@@ -16,93 +12,9 @@
 </head>
 <body>
 
-    <header class="header">
-        <div class="header_nav">
-            <div class="logo">
-                <a href="">
-                    <h1 id="logoNav" class="logo_texto h-1">NIEHS</h1>
-                </a>
-            </div>
-            <div class="buscador">
-                <form >
-                    <div class="buscador_contenedor">
-                        <input type="search" id="default-search" class="buscador_input" placeholder="Buscar artículos" required>
-                        <button type="submit" class="buscador_btn">Buscar</button>
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </div>
-                </form>
-            </div>
-            <div class="contenedor_genero">
-                <ul class="nav_lista">
-                    <li class="nav_lista_elemento">
-                        <a name="btn_nav" class="btn_nav">
-                            Hombre
-                        </a>
-                    </li>
-                    <li class="nav_lista_elemento">
-                        <a name="btn_nav" class="btn_nav">
-                            Mujer   
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contenedor_carrito_usuario">
-                <div class="carrito">
-                    <a href="">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </a>
-                </div>
-                <div class="usuario_icono">
-                    <a href="">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <nav id="sidebar" class="nav_principal">
-            <ul class="nav_principal_lista">
-                <li class="nav_principal_elemento">
-                    <a href="#" class="">
-                        Conjuntos
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        Ropa deportiva
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        Sudadera
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        Chaquetas y abrigos
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        Accesorios
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        Ropa interior
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-        
-    </header>
+    <div class="header-contenedor"></div>
+    
+    
     <main>
         <div class="contenedor">
             <div class="rectangulo-contenedor">
@@ -217,6 +129,6 @@
             </div>
         </footer>
     </div>
-    <script src="../js/barraNavegacion.js"></script>
+    <script src="../js/header.js"></script>
 </body>
 </html>
