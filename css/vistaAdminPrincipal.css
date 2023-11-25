@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;600&display=swap');
+
+/* Iconos */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.material-symbols-outlined a {
+    color: #003344;
+    border: 1px solid #003344;
+    background-color: #F5F5F2;
+    border-radius: 5px;
+}
+
+.material-symbols-outlined a:hover {
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Fuentes */
+.texto-principal {
+    font-family: 'Inter', sans-serif;
+    color: black;
+}
+
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    width: 1024px;
+    text-align: left;
+    color: black;
+}
+
+.texto-principal select{
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    border: none;
+    background-color: #EEEEEE;
+}
+
+.texto-principal option{
+    font-weight: bold;
+}
+
+.texto-principal th {
+    font-size: 12px;
+    font-weight: bold;
+    border-bottom: 3px solid #D9D9D9;
+}
+
+.texto-principal td {
+    font-size: 12px;
+    border-bottom: 2px solid #D9D9D9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.celda-descripcion {
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.cuerpo {
+    font-size: 12px;
+}
+
+.tabla{
+    text-align: left;
+    border-collapse: collapse;
+}
+
+/* Distribuciones */
+
+main {
+    margin-top: 60px;
+}
+
+.contenedor-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.rectangulo-principal {
+    width: 1024px;
+    /*height: 530px;*/
+    border-radius: 10px;
+    box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
+    padding: 27px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangulo-principal > * {
+    margin-bottom: 10px;
+}
+
+.caja-ordenar {
+    padding: 5px;
+    background-color: #EEEEEE;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.acciones {
+    display: flex;
+    flex-direction: row;
+}
+
+.acciones > span {
+    margin-right: -70px;
+}
+
+.boton-agregar-producto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.boton-agregar-producto a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 10px;
+    background-color: #006D77;
+    border-radius: 10px;
+}
+
+.boton-agregar-producto a:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
