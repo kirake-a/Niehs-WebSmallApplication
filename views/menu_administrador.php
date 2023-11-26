@@ -6,12 +6,12 @@
     <title>Vista admin principal</title>
 
     <!--Estilos del header-->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles_admin.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos_administrador.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos del body-->
-    <link rel="stylesheet" href="../css/vistaAdminPrincipal.css" type="text/css">
+    <link rel="stylesheet" href="../css/menu_administrador.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
 </head>

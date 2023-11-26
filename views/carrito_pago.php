@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito pago</title>
 
-    <link rel="stylesheet" href="/css/carrito-pago.css">
+    <link rel="stylesheet" href="/css/carrito_pago.css">
 </head>
 <body>
 
