@@ -23,7 +23,7 @@
         </div>
 
         <!-- lgin form -->
-        <form method="POST" class="mt-7">
+        <form method="post" class="mt-7" action=".././funciones/autenticar.php">
             <div class="input-container">
                 <label for="username" class="block text-sm font-medium text-gray-900 mb-2 mt-4">Correo electrónico:
                 </label>
@@ -34,7 +34,7 @@
                             d="M9.12389 9.94822L9.13494 9.94034L9.14554 9.93186L14.1667 5.91868V11.4223C14.1667 11.6081 14.0879 11.794 13.935 11.9367C13.781 12.0805 13.5651 12.1667 13.3334 12.1667H2.66671C2.43499 12.1667 2.21911 12.0805 2.06506 11.9367C1.91217 11.794 1.83337 11.6081 1.83337 11.4223V5.91843L6.88728 9.95619L6.89947 9.96592L6.91223 9.97488C7.22633 10.1952 7.60456 10.3114 7.98966 10.3107L7.99134 10.3107C8.39736 10.3086 8.79502 10.183 9.12389 9.94822ZM2.87574 3.83337H13.1243L8.00004 7.92869L2.87574 3.83337Z"
                             fill="#6B7280" stroke="#6B7280" />
                     </svg>
-                    <input id="username" name="username" type="email" placeholder="Correo electrónico" required
+                    <input id="emailUser" name="emailUser" type="email" placeholder="Correo electrónico" required
                         class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full py-3 px-10" />
                     <button class="close-btn absolute bottom-4 right-3 pr-0 bg-transparent hidden" type="button">
                         <svg aria-hidden="true" class="w-3 h-3 text-gray-800 dark:text-gray-500" fill="currentColor"
@@ -56,7 +56,7 @@
                             fill="#6B7280" stroke="#6B7280" />
                     </svg>
 
-                    <input id="password" name="password" type="password" placeholder="Contraseña" required
+                    <input id="passwordUser" name="passwordUser" type="password" placeholder="Contraseña" required
                         class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full py-3 px-10" />
                     <button class="close-btn absolute bottom-4 right-3 pr-0 bg-transparent hidden" type="button">
                         <svg aria-hidden="true" class="w-3 h-3 text-gray-800 dark:text-gray-500" fill="currentColor"
@@ -76,7 +76,7 @@
             </div>
 
             <div class="flex justify-center mt-4">
-                <input type="submit" value="Iniciar sesión"
+                <input type="submit" value="Iniciar sesión" id="btn_enviar" name="btn_enviar"
                     class=" cursor-pointer w-full sm:w-2/3 md:w-1/2 lg:w-1/3 2xl:w-1/4 bg-cyan-800 text-white font-medium text-sm rounded-lg text-center py-2.5 px-5 md:px-2 lg:px-1 xl:px-0 mt-4">
             </div>
         </form>

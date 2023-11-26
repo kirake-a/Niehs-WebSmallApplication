@@ -7,13 +7,12 @@
 
 
     <!--Estilos del carrito vacio-->
-    <link rel="stylesheet" href="../css/catalogoGeneral.css">
+    <link rel="stylesheet" href="../css/catalogo_general.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 </head>
 <body>
 
     <div class="header-contenedor"></div>
-    
     
     <main>
         <div class="contenedor">

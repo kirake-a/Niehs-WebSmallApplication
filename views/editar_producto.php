@@ -7,12 +7,12 @@
 
     <!--Estilos del header-->
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/styles_admin.css">
+    <link rel="stylesheet" href="/css/estilos_administrador.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos de la vista editar producto-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="../css/editarProducto.css">
+    <link rel="stylesheet" href="../css/editar_producto.css">
 </head>
 <body>
     <header class="header">
@@ -130,6 +130,6 @@
             </div>
         </form>
     </main>
-    <script src="../js/insertarImagen.js"></script>
+    <script src="../js/insertar_imagen.js"></script>
 </body>
 </html>

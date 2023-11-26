@@ -7,15 +7,14 @@
 
     <!--Estilos del header-->
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/header_footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos del carrito vacio-->
-    <link rel="stylesheet" href="../css/carritoVacio.css">
+    <link rel="stylesheet" href="../css/carrito_vacio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-    <link rel="stylesheet" href="../css/FooterStyle.css">
 
-    <link rel="stylesheet" href="../css/carritoArticulos.css">
+    <link rel="stylesheet" href="../css/carrito_articulos.css">
 </head>
 <body>
     <header class="header">
@@ -205,7 +204,7 @@
         </footer>
     </div>
 
-    <script src="/js/barraNavegacion.js"></script>
+    <script src="/js/barra_navegacion.js"></script>
     
 </body>
 </html>
