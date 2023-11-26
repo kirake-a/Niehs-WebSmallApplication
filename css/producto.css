@@ -17,20 +17,23 @@
 
 
 .main-frame{
-    height: 70rem;
+    height: 50em;
 }
 
 .imagen{
-    margin-top: 5rem;
-    width: 60rem;
-    margin-left: 20rem;
+    margin-top: 5em;
+    width: 60em;
+    margin-left: 15em;
 }
 
+.imagen-producto{
+    width: 50%;
+}
 
 
 .detalles{
     position: absolute;
-    left: 60%;
+    left: 55%;
     top: 20%;
     
 }
@@ -59,7 +62,7 @@
 
 .color-producto{
     font-size: 20px;
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 .talla-producto{
@@ -69,14 +72,14 @@
 }
 
 .select-talla{
-    width: 35rem;
-    height: 4rem;
+    width: 35em;
+    height: 4em;
     
 }
 
 .boton{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
     
 }
 
@@ -86,14 +89,14 @@
     color: white;
     font-family: var(--inter);
     font-weight: 700;
-    height: 5rem;
+    height: 5em;
     border-radius: 8px;
     font-size: 20px;
     cursor: pointer;
 }
 
 .servicios{
-    margin-top: 1rem;
+    margin-top: 1em;
     border: 1px;
     border-color: #B1B1B1;
     border-style: solid;
@@ -106,13 +109,13 @@
 .envio{
     font-size: 15px;
     font-family: var(--inter);
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 .imagen-envio{
     height: auto;
     width: auto;
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 .detalles-devoluciones{
@@ -122,18 +125,18 @@
 .devoluciones{
     font-size: 15px;
     font-family: var(--inter);
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 .imagen-devoluciones{
     height: auto;
     width: auto;
-    margin-left: 1rem;
+    margin-left: 1em;
 }
 
 .politicas{
     font-size: 15px;
     font-family: var(--inter);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: 1em;
+    margin-right: 1em;
 }

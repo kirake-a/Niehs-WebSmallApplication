@@ -17,93 +17,8 @@
     <link rel="stylesheet" href="../css/carrito_articulos.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header_nav">
-            <div class="logo">
-                <a href="">
-                    <h1 id="logoNav" class="logo_texto h-1">NIEHS</h1>
-                </a>
-            </div>
-            <div class="buscador">
-                <form class="buscador_contenedor">
-                    <div class="">
-                        <input type="search" id="default-search" class="buscador_input" placeholder="Buscar artículos" required>
-                        <button type="submit" class="buscador_btn">Buscar</button>
-                        <span class="material-symbols-outlined">
-                            search
-                        </span>
-                    </div>
-                </form>
-            </div>
-            <div class="contenedor_genero">
-                <ul class="nav_lista">
-                    <li class="nav_lista_elemento">
-                        <a name="btn_nav" class="btn_nav">
-                            Hombre
-                        </a>
-                    </li>
-                    <li class="nav_lista_elemento">
-                        <a name="btn_nav" class="btn_nav">
-                            Mujer   
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="contenedor_carrito_usuario">
-                <div class="carrito">
-                    <a href="">
-                        <span class="material-symbols-outlined">
-                            shopping_cart
-                        </span>
-                    </a>
-                </div>
-                <div class="usuario_icono">
-                    <a href="">
-                        <span class="material-symbols-outlined">
-                            person
-                        </span>
-                    </a>
-                </div>
-            </div>
-        </div>
 
-        <nav id="sidebar" class="nav_principal">
-            <ul class="nav_principal_lista">
-                <li class="nav_principal_elemento">
-                    <a href="#" class="">
-                        <span>Conjuntos</span>
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        <span>Ropa deportiva</span>
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        <span >Sudadera</span>
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        <span>Chaquetas y abrigos</span>
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        <span>Accesorios</span>
-                    </a>
-                </li>
-                <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
-                        <span>Ropa interior</span>
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-        
-    </header>
+    <div class="header-contenedor"></div>
 
     <main class="container">
         <section class="productos">
@@ -137,74 +52,11 @@
         </section>
     </main>
 
-    <div class="grid">
-        <footer class="footer">
-            <div class="footer_nav">
-                <h2 class="nav_mi_cuenta">Mi Cuenta</h2>
-                <ul class="nav_lista_mi_cuenta">
-                    <li class="nav_lista_mi_cuenta_elemento">
-                        <a href="#" class="">
-                            <p class="lista_elemento">Cerrar sesión</p>
-                        </a>
-                    </li>
-                    <li class="nav_lista_mi_cuenta_elemento"> 
-                        <a href="#" class="">
-                            <p class="lista_elemento">Mi carrito</p>
-                        </a>
-                    </li>
-                </ul>
-                <h2 class="nav_navegacion">Navegación</h2>
-                <ul class="nav_lista1_navegacion">
-                    <li class="nav_lista1_navegacion_elemento">
-                        <a href="#" class="">
-                            <p class="lista_elemento">Conjuntos</p>
-                        </a>
-                    </li>
-                    <li class="nav_lista1_navegacion_elemento">
-                        <a href="#" class="">
-                            <p class="lista_elemento">Ropa Deportiva</p>
-                        </a>
-                    </li>
-                    <li class="nav_lista1_navegacion_elemento">
-                        <a href="#" class="">
-                            <p class="lista_elemento">Sudaderas</p>
-                        </a>
-                    </li>
-                </ul>
-                <ul class="nav_lista2_navegacion">
-                    <li class="nav_lista1_navegacion_elemento">
-                        <a href="#" class="">
-                            <p class="lista_elemento">Chaquetas y Abrigos</p>
-                        </a>
-                    </li>
-                    <li class="nav_lista2_navegacion_elemento">
-                        <a href="#" class="">
-                            <p class="lista_elemento">Accesorios</p>
-                        </a>
-                    </li>
-                    <li class="nav_lista2_navegacion_elemento">
-                        <a href="#" class="">
-                            <p class="lista_elemento">Ropa interior</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer_copyright">
-                <p class="copyright">&copy; 2023</p>
-            </div>
-            <div class="footer_niehs">
-                <h1 class="niehs">Niehs</h1>
-            </div>
-            <div class="footer_tarjetas">
-                <img src="/imagenes/ImagenAmericanExpress.png" alt="American Express">
-                <img src="/imagenes/ImagenPayPal.png" alt="PayPal">
-                <img src="/imagenes/ImagenVisa.png" alt="Visa">
-                <img src="/imagenes/ImagenMasterCard.png" alt="Master Card">
-            </div>
-        </footer>
-    </div>
+    <div class="footer-contenedor"></div>
 
-    <script src="/js/barra_navegacion.js"></script>
+
+    <script src="../js/footer.js"></script>
+    <script src="../js/header.js"></script>
     
 </body>
 </html>
