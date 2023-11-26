@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tu carrito</title>
 
-    <!--Estilos del header-->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="../css/header_footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <!--Estilos del carrito vacio-->
-    <link rel="stylesheet" href="../css/carrito_vacio.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-
     <link rel="stylesheet" href="../css/carrito_articulos.css">
 </head>
 <body>
