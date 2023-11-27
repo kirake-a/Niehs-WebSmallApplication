@@ -96,7 +96,7 @@
                         </td>
                     </tr>
                 </table>
-                <div class="boton-agregar-producto texto-principal"><a href="#">Agregar producto</a></div>
+                <div class="boton-agregar-producto texto-principal"><a href="editar_producto.php?modo=agregar">Agregar producto</a></div>
             </div>
         </div>
     </main>
