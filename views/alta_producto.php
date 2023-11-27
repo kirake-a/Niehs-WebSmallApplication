@@ -6,8 +6,8 @@
     <title>Producto</title>
 
     <!--Estilos del header-->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/estilos_administrador.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos_administrador.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos de la vista editar producto-->

@@ -12,41 +12,40 @@
    <div class="header-contenedor"></div>
    
    <div class="main-frame">
-    <div class="imagen">
-        <img src="../imagenes/productos/hombre/accesorios/accesorioHombre1.jpg" class="imagen-producto">
-    </div>
-    <div class="detalles">
-        <p class="descripcion-producto">Descripcion</p>
-        <p class="precio-producto">$ 0</p>
-        <div class="color">
-            <p class="color-texto">Color: </p>
-            <p class="color-producto">Azul</p>
+        <div class="imagen">
+            <img src="../imagenes/productos/hombre/accesorios/accesorioHombre1.jpg" class="imagen-producto">
         </div>
-        <div class="talla">
-            <p class="talla-producto">Talla:</p>
-            <select class="select-talla">
-                <option value="NULL"></option>
-                <option value="SMALL">S</option>
-                <option value="MEDIA">M</option>
-                <option value="LARGE">L</option>
-                <option value="EXTRA LARGE">XL</option>
-            </select>
-        </div>
-        <div class="boton">
-            <button class="boton-agregar">AÑADIR A MI CARRITO</button>
-        </div>
-        <div class="servicios">
-            <div class="detalles-envio">
-                <img src="../imagenes/tabler_truck-delivery.jpg" class="imagen-envio">
-                <p class="envio">Envío gratis</p>
+        <div class="detalles">
+            <p class="descripcion-producto">Descripcion</p>
+            <p class="precio-producto">$ 0</p>
+            <div class="color">
+                <p class="color-texto">Color: </p>
+                <p class="color-producto">Azul</p>
             </div>
-            <div class="detalles-devoluciones">
-                <img src="../imagenes/carbon_delivery-parcel.jpg" class="imagen-devoluciones">
-                <p class="devoluciones">Devoluciones gratis</p>
+            <div class="talla">
+                <p class="talla-producto">Talla:</p>
+                <select class="select-talla">
+                    <option value="NULL"></option>
+                    <option value="CHICA">C</option>
+                    <option value="MEDIANA">M</option>
+                    <option value="GRANDE">G</option>
+                </select>
             </div>
-            <p class="politicas">Consulte la política de envíos y devoluciones</p>
+            <div class="boton">
+                <button class="boton-agregar">Añadir a mi carrito</button>
+            </div>
+            <div class="servicios">
+                <div class="detalles-envio">
+                    <img src="../imagenes/tabler_truck-delivery.jpg" class="imagen-envio">
+                    <p class="envio">Envío gratis</p>
+                </div>
+                <div class="detalles-devoluciones">
+                    <img src="../imagenes/carbon_delivery-parcel.jpg" class="imagen-devoluciones">
+                    <p class="devoluciones">Devoluciones gratis</p>
+                </div>
+                <p class="politicas">Consulte la política de envíos y devoluciones</p>
+            </div>
         </div>
-    </div>
     </div>
 
     <div class="footer-contenedor"></div>
@@ -55,3 +54,4 @@
     <script src="../js/header.js"></script>
     
 </body>
+</html>

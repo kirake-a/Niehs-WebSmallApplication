@@ -1,18 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;600&display=swap');
 
 .container {
-    margin: 60px;
+    margin: 0 60px;
 }
 
 .resumen-pago {
-    width: 495px;
-    height: 384px;
+    width: 30%;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
     position: relative;
-    left: 1200px;
+    left: 850px;
     bottom: 660px;
-    display: flex;
     padding: 20px;
 }
 
@@ -24,14 +23,16 @@
 
 .pay {
     position: absolute;
-    bottom: 31px;
+    left: 90px;
+    bottom: 20px;
     text-align: center;
-    width: 402px;
+    width: auto;
+    padding: 0 2rem;
     height: 72px;
     border-radius: 15px;
     background-color: #006D77;
     font-family: "Inter", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 550;
     color: white;
     border: none;
@@ -47,7 +48,7 @@
 }
 
 .productos {
-    width: 1000px;
+    width: 60%;
     height: 662px;
     border-radius: 10px;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);

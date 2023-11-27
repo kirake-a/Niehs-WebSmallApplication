@@ -89,7 +89,7 @@
     top: 10em;
     right: 15em;
     text-align: center;
-    box-shadow: 10px 10px 60px var(--negro);
+    box-shadow: 5px 5px 5px var(--negro);
     font-family: var(--inter);
 }
 
@@ -147,7 +147,7 @@
     height: 30em;
 
     background: var(--blanco); 
-    box-shadow: 10px 10px 60px;
+    box-shadow: 5px 5px 5px;
 
     overflow-y: scroll;
 }
