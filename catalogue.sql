@@ -79,12 +79,12 @@ CREATE TABLE `user` (
     `id_user` int(11) NOT NULL AUTO_INCREMENT,
     `fullname` varchar(100) NOT NULL,
     `email` varchar(100) NOT NULL,
-    `contrasena` varchar(100) NOT NULL,
+    `password` varchar(100) NOT NULL,
     `rol` int(5) NOT NULL,
     PRIMARY KEY (`id_user`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT INTO `user` (`id_user`, `fullname`, `email`, `contrasena`,`rol`) VALUES
+INSERT INTO `user` (`id_user`, `fullname`, `email`, `password`,`rol`) VALUES
 (1, 'Ruben Alvarado', 'ruben.alvarado@niehs.com', '12345', 0),
 (2, 'Jose Puc', 'jose.puc@niehs.com', '12345', 0),
 (3, 'Miguel Castillo', 'mike.castillo@niehs.com', '12345', 0),
