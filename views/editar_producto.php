@@ -6,8 +6,8 @@
     <title>Producto</title>
 
     <!--Estilos del header-->
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/estilos_administrador.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/estilos_administrador.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos de la vista editar producto-->
@@ -60,7 +60,7 @@
                         <input type="text" id="id_producto" class="id" readonly>
                     </div>
                     <div class="contenedor-boton-salir">
-                        <a href="">
+                        <a href="menu_administrador.php">
                             <span class="material-symbols-outlined">
                                 Close
                             </span>
@@ -97,8 +97,8 @@
                     <div class="contenido-atributo">
                         <select class="seleccion" id=genero_producto>
                             <option value="NULL"></option>
-                            <option value="MUJER">MUJER</option>
-                            <option value="HOMBRE">HOMBRE</option>
+                            <option value="Mujer">MUJER</option>
+                            <option value="Hombre">HOMBRE</option>
                         </select>
                     </div>
                 </div>
@@ -115,7 +115,7 @@
                 <div class="contenedor-atributo-precio">
                     <div class="nombre-atributo"><pre class="text-explanation"> PRECIO:             $</pre></div>
                     <div class="contenido-atributo">
-                        <input type="number" min="0" step="0.01" id="precio" class="seleccion" placeholder="Escribe un precio...">
+                        <input type="number" min="0" step="0.01" id="precio_producto" class="seleccion" placeholder="Escribe un precio...">
                     </div>
                 </div>
                 <div class="contenedor-atributo-existencia">
@@ -131,5 +131,6 @@
         </form>
     </main>
     <script src="../js/insertar_imagen.js"></script>
+    <script src="../js/modo_administrar_producto.js"></script>
 </body>
 </html>

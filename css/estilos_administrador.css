@@ -100,8 +100,6 @@ span{
 */
 .header{
     background-color: var(--secundarioOscuro);
-    background-image: url('/img/model.png');
-    background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     height: 47rem;
@@ -221,7 +219,6 @@ span{
 @media (min-width: 640px){
 
     .header{
-        background-image: url('/img/model_2-removebg-preview.png'), url('/img/model2.1-removebg-preview.png');
         background-size: auto, auto;
         background-position: left top, right top; /* Puedes ajustar la posición de cada imagen */
         background-repeat: no-repeat, no-repeat;
