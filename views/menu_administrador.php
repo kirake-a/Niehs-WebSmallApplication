@@ -1,3 +1,8 @@
+<?php
+include_once("../funciones/mantener_sesion.php");
+validarSesion();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
