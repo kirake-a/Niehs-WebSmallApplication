@@ -7,7 +7,7 @@ function abrirConexion(){
 //--------------------------------
 function seleccionarBaseDatos($pconector){
  //Permite seleccionar una base de datos
- mysqli_select_db($pconector, $GLOBALS["database"]) or die(mysqli_connect_error($pconector));
+ mysqli_select_db($pconector, $GLOBALS["data_base"]) or die(mysqli_connect_error($pconector));
 }
 //--------------------------------
 function cerrarConexion($pconector){

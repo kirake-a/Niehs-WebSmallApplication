@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos del carrito vacio-->
-    <link rel="stylesheet" href="../css/carritoVacio.css">
+    <link rel="stylesheet" href="../css/carrito_vacio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     
 </head>

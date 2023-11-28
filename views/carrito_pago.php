@@ -3,60 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Catalogo general</title>
+    <title>Carrito pago</title>
 
-
-    <!--Estilos del carrito vacio-->
-    <link rel="stylesheet" href="../css/catalogoGeneral.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="../css/carrito_pago.css">
 </head>
 <body>
 
     <div class="header-contenedor"></div>
-    
-    
-    <main>
-        <div class="contenedor">
-            <div class="rectangulo-contenedor">
-                <a href="#">
-                  <div class="rectangulo" id="imagenProducto1">
-                    <div class="rectangulo-azul">
-                      <div class="precio" id="precioProducto1">$750</div>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="descripcion-contenedor" id="descripcionProducto1">DESCRIPCION DEL PRODUCTO</div>
-                </a>
+
+    <div class="main-frame">
+    <div class="carrito">
+        <div class="producto">
+            <div class="producto-imagen">
+                <img src="/imagenes/productos/hombre/accesorios/accesorioHombre1.jpg" class="imagen-producto">
             </div>
-            
-            <div class="rectangulo-contenedor">
-                <a href="#">
-                  <div class="rectangulo" id="imagenProducto2">
-                    <div class="rectangulo-azul">
-                      <div class="precio" id="precioProducto2">$750</div>
-                    </div>
-                  </div>
-                </a>
-                <a href="#">
-                  <div class="descripcion-contenedor" id="descripcionProducto2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nisl lorem, gravida a auctor non.</div>
-                </a>
-            </div>
-            
-            <div class="rectangulo-contenedor">
-                <a href="#">
-                  <div class="rectangulo" id="imagenProducto3">
-                    <div class="rectangulo-azul">
-                      <div class="precio" id="precioProducto3">$750</div>
-                    </div>
-                  </div>
-                </a>
-                <a href="">
-                  <div class="descripcion-contenedor" id="descripcionProducto3">DESCRIPCION MUY LARGA DEL PRODUCTO QUE PODRIA ARRUINAR LA ALINEACION</div>
-                </a>
+            <div class="producto-detalles">
+                <p class="producto-descripcion">Descripcion</p>
+                <p class="producto-cantidad">0$</p>
+                <div class="producto-detalles-finales">
+                    <p class="producto-texto-cantidad">Cantidad: 0</p>
+                    <button class="producto-boton-eliminar">Eliminar</button>  
+                </div>             
             </div>
         </div>
-    </main>
+    </div>
+    <div class="por-pagar">
+        <div class="total">
+            <p class="total-texto">Total:</p>
+            <p class="total-cantidad">$0</p>
+        </div>
+        <div class="fondos">
+            <p class="fondos-texto">Fondos disponibles:</p>
+            <p class="fondos-cantidad">$0</p>
+        </div>
+        <div class="restante">
+            <p class="restante-texto">Total restante:</p>
+            <p class="restante-cantidad">$0</p>
+        </div>
+        <div class="boton">
+            <button class="boton-pagar">Pagar</button>
+        </div>
+    </div>
+    <div class="metodos-pago">
+        <div class="texto-pago">Selecciona la forma de pago</div>
+        <div class="pago-tarjeta">
+            <button class="pago-tarjeta-boton">
+                <p class="pago-tarjeta-texto">Tarjeta de crédito</p>
+                <img src="/imagenes/footer/ImagenTarjetaCredito.png" class="pago-tarjeta-imagen">
+            </button>
+        </div>
+        <div class="pago-paypal">
+            <button class="pago-paypal-boton">
+                <img src="/imagenes/footer/ImagenSimboloPaypal.png" class="pago-paypal-imagen">
+            </button>
+            
+        </div>
+        
+    </div>
+    </div>
 
     <div class="grid">
         <footer class="footer">
@@ -121,10 +125,10 @@
                     <h1 class="niehs">Niehs</h1>
                 </div>
                 <div class="footer_tarjetas">
-                    <img src="../imagenes/footer/ImagenAmericanExpress.png" alt="American Express">
-                    <img src="../imagenes/footer/ImagenPayPal.png" alt="PayPal">
-                    <img src="../imagenes/footer/ImagenVisa.png" alt="Visa">
-                    <img src="../imagenes/footer/ImagenMasterCard.png" alt="Master Card">
+                    <img src="/imagenes/footer/ImagenAmericanExpress.png" alt="American Express">
+                    <img src="/imagenes/footer/ImagenPayPal.png" alt="PayPal">
+                    <img src="/imagenes/footer/ImagenVisa.png" alt="Visa">
+                    <img src="/imagenes/footer/ImagenMasterCard.png" alt="Master Card">
                 </div>
             </div>
         </footer>

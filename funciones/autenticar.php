@@ -1,56 +1,54 @@
 <?php
 include_once("../config.inc.php");
 include_once("acceder_base_datos.php");
-include_once("mantener_sesion.php");
-
-$mensajeError = '';
-$url = "Location:" . $GLOBALS["root_site"] . "index.php";
 
 if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
 
-  $url = "Location:" . $GLOBALS["root_site"] . "index.php";
+  //echo "se presiono el bot&oacute;n Enviar";	
+  $curl = "Location:" . $GLOBALS["root_site"] . "views/index.php";
   $adatos = array();
   $pconexion = abrirConexion();
   seleccionarBaseDatos($pconexion);
 
-  $usuario = $_POST["username"];
-  $contrasena = $_POST["password"];
+  $emailUser = $_POST["emailUser"];
+  $passwordUser = $_POST["passwordUser"];
 
-  $cquery = "SELECT id_user FROM user";
-  $cquery .= " WHERE (email='$usuario')";
-  $cquery .= " AND (password='$contrasena')";
+  $cquery = "SELECT id_user, rol FROM user";
+  $cquery .= " WHERE (email='$emailUser')";
+  $cquery .= " AND (password='$passwordUser')";
+
+  $cnquery = "SELECT id_user, rol FROM user WHERE email = ? AND password = ?";
 
   $adatos = extraerRegistro($pconexion, $cquery);
+  //!empty($adatos)
+  $stmt = mysqli_prepare($pconexion, $cnquery);
+  mysqli_stmt_bind_param($stmt, "ss", $emailUser, $passwordUser);
+  mysqli_stmt_execute($stmt);
+  mysqli_stmt_bind_result($stmt, $id_user, $rol);
 
-  if (!empty($adatos)) {
-    $idsesion = $adatos["id_user"] . $usuario;
-    $rolUsuario = $adatos["rol"];
+  if (mysqli_stmt_fetch($stmt)) {
+    // Usuario encontrado, iniciar sesion y redirigir
+    //$id_session = $adatos["rol"] . $usuario;
     session_start();
+    $_SESSION["id_user"] = $rol . $id_user;
 
-    // Guarda el usuario con el atributo ["x"] en la sesion
-    $_SESSION["cidusuario"] = $idsesion;
-    $_SESSION["rol"] = $rolUsuario;
-
-    // Redirigir a diferentes paginas segun el rol del usuario
-    if ($rolUsuario == 0) {
-      $url = "Location:" . $GLOBALS["root_site"] . "views/carritoVacio.html";
-    } elseif ($rolUsuario == 1) {
-      $url = "Location:" . $GLOBALS["root_site"] . "views/carritoVacio.html";
+    //Verificar si es administrador o es cliente
+    if ($adatos["rol"] == 1) { // Iniciar sesion un administrador
+      //$curl = "Location:" . $GLOBALS["root_site"] . "views/menu_administrador.php";
+      include_once '../views/menu_administrador.php';
+    } else if ($adatos["rol"] == 0) { // Inicia sesion un cliente
+      //$curl = "Location:" . $GLOBALS["root_site"] . "views/catalogo_general.php";
+      include_once '../views/catalogo_general.php';
     }
 
-    echo "Ruta de redireccionaiento $url";
-    
   } else {
-    mensajeError();
+    // Usuario no encontrado, establecer mensaje de error
+    $userNotFound = "* Su correo o contraseña son incorrectos.\nIntentelo nuevamente, por favor.";
+    include_once '../index.php';
   }
 
   cerrarConexion($pconexion);
-  //echo $curl;
-  header($url);
+  //header($curl);
   exit();
-}
-
-function mensajeError() {
-  $mensajeError = "Se ha producido un problema al iniciar sesion.\nVerifica tu correo y contraseña";
 }
 ?>
