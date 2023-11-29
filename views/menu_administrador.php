@@ -83,7 +83,7 @@ validarSesion();
                     </tr>
 
                     <tr>
-                        <td id="id_producto">GATO</td>
+                        <td id="id_producto">27</td>
                         <td class="celda-descripcion" id="description">HABIA UNA VEZ UN GATO GORDO PERO TAN GORDO</td>
                         <td id="cost">$5000</td>
                         <td id="amount">5</td>
@@ -93,7 +93,7 @@ validarSesion();
                         <td id="gender">Masculino</td>
                         <td class="acciones">
                             <span class="material-symbols-outlined">
-                                <a href="">edit_square</a>                                
+                                <a href="editar_producto.php?modo=editar&id=68">edit_square</a>                                
                             </span>
                             <span class="material-symbols-outlined">
                                 <a href="">delete</a>
