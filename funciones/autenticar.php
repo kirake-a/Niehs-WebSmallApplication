@@ -38,9 +38,9 @@ if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
     }
 
   } else {
-    // Usuario no encontrado, establecer mensaje de error
+    session_start();
     $userNotFound = "* Su correo o contraseña son incorrectos.\nIntentelo nuevamente, por favor.";
-    $redirection = "Location:" . $GLOBALS["root_site"] . "index.php";
+    $_SESSION["userNotFound"] = $userNotFound;
   }
 
   cerrarConexion($pconexion);
