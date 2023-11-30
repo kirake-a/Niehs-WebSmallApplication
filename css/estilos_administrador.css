@@ -48,6 +48,29 @@ img {
     margin: 0 auto;
 }
 
+#botonCerrarSesion {
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    color: #465362;
+    font-weight: 500;
+    border: 0.5px solid #465362;
+}
+
+#botonCerrarSesion:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#botonCerrarSesion:active {
+    background-color: var(--secundarioOscuro);
+    color: white;
+    box-shadow: none;
+    border: 1px solid white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .absolute{
     position: absolute;
 }

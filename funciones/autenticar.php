@@ -27,8 +27,7 @@ if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
   mysqli_stmt_bind_result($stmt, $id_user, $rol);
 
   if (mysqli_stmt_fetch($stmt)) {
-    $user_key = $rol . $id_user;
-    iniciarSesion($user_key);
+    iniciarSesion($adatos["rol"]);
 
     //Verificar si es administrador o es cliente
     if ($adatos["rol"] == 1) {
@@ -39,8 +38,7 @@ if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
 
   } else {
     session_start();
-    $userNotFound = "* Su correo o contraseña son incorrectos.\nIntentelo nuevamente, por favor.";
-    $_SESSION["userNotFound"] = $userNotFound;
+    $_SESSION["userNotFound"] = "* Su correo o contraseña son incorrectos.\nIntentelo nuevamente, por favor.";
   }
 
   cerrarConexion($pconexion);

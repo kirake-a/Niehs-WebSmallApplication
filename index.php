@@ -25,10 +25,9 @@
             <span id="errorSpan" style="color: red"></span>
             <?php
                 session_start();
-
                 if (isset($_SESSION["userNotFound"])) {
-                    echo '<span style="color: red">' . $_SESSION["userNotFound"] . '</span>';
-                    unset($_SESSION['userNotFound']); // Limpiar la sesion despues de mostrar el mensaje
+                    echo '<span style="color: red">'.$_SESSION["userNotFound"].'</span>';
+                    unset($_SESSION['userNotFound']);
                 }
             ?>
         </div>
