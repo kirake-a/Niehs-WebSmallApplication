@@ -7,13 +7,13 @@ function validarSesion($user_key) {
   // No existe una sesion iniciada, entonces se manda a la vista de inicio de sesion
   if (!isset($_SESSION["id_user"])) {
     redirigirAlIndex();
-    
+
   } // Existe una sesion iniciada, se necesita verificar si el usuario tiene permiso de entrar a dicha vista
   else {
     $user_rol = $_SESSION["id_user"];
 
     if (($user_rol != 1 && $user_key == 1) || ($user_rol != 0 && $user_key == 0)) {
-      redirigirAlIndex();
+      mostrarError401();
     }
   }
 }
@@ -22,11 +22,18 @@ function iniciarSesion($cidlogin) {
   session_start();
 
   $_SESSION["id_user"] = $cidlogin;
+
 }
 
 function redirigirAlIndex() {
   $destino = "Location: http://localhost/niehs/index.php";
   header($destino);
+  exit();
+}
+
+function mostrarError401() {
+  header("HTTP/1.1 401 Unauthorized");
+  include("401.html");
   exit();
 }
 ?>

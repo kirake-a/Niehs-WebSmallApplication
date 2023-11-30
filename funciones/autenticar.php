@@ -27,16 +27,12 @@ if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
   mysqli_stmt_bind_result($stmt, $id_user, $rol);
 
   if (mysqli_stmt_fetch($stmt)) {
-    $user_key = $adatos["rol"];
+    iniciarSesion($adatos["rol"]);
 
     //Verificar si es administrador o es cliente
     if ($adatos["rol"] == 1) {
-      iniciarSesion($user_key);
-      $user_rol = 1; // user is admin
       $curl = "Location:" . $GLOBALS["root_site"] . "views/menu_administrador.php";
     } else if ($adatos["rol"] == 0) {
-      iniciarSesion($user_key);
-      $user_rol = 0; // user is a client
       $curl = "Location:" . $GLOBALS["root_site"] . "views/catalogo_general.php";
     }
 
