@@ -20,6 +20,7 @@ validarSesion($user_key);
     <link rel="stylesheet" href="../css/menu_administrador.css" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
+    <script src="../js/manejador_logout.js" defer></script>
 </head>
 <body>
 
@@ -41,8 +42,8 @@ validarSesion($user_key);
                 </ul>
             </div>
             <div class="contenedor_usuario">
-                <div class="usuario_icono">
-                    <a href="">
+                <div class="usuario_icono" id="usuario_icono">
+                    <a href="#" id="cerrarSesionSpan" onclick="mostrarBotonCerrarSesion(event)">
                         <span class="material-symbols-outlined">
                             person
                         </span>
