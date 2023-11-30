@@ -37,7 +37,7 @@ function listarProductos()
 				$ccontenido .= '<td id="gender">'. $adatos["gender"] .'</td>';
 
 				$ccontenido .= '<td class="acciones">';
-				$ccontenido .= '<span class="material-symbols-outlined edit"><a href="">edit_square</a></span>';
+				$ccontenido .= '<span class="material-symbols-outlined edit"><a href="editar_producto.php?modo=editar&id='.$adatos["id_producto"].'">edit_square</a></span>';
 				$ccontenido .= '<span class="material-symbols-outlined delete" id="delete" name="delete" data-id="<?php echo $adatos[\'id_producto\']; ?>">';
 				$ccontenido .= '<a href="../funciones/borrar.php?cid_producto='.$cid_producto.'">delete</a></span>';
 				$ccontenido .= '</td>';

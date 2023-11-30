@@ -84,25 +84,9 @@ validarSesion();
                         <th>G&Eacute;NERO</th>
                         <th>ACCIONES</th>
                     </tr>
-
-                    <tr>
-                        <td id="id_producto">27</td>
-                        <td class="celda-descripcion" id="description">HABIA UNA VEZ UN GATO GORDO PERO TAN GORDO</td>
-                        <td id="cost">$5000</td>
-                        <td id="amount">5</td>
-                        <td id="type">Ropa interior</td>
-                        <td id="size">Mediana</td>
-                        <td id="color">Rosado</td>
-                        <td id="gender">Masculino</td>
-                        <td class="acciones">
-                            <span class="material-symbols-outlined">
-                                <a href="editar_producto.php?modo=editar&id=68">edit_square</a>                                
-                            </span>
-                            <span class="material-symbols-outlined">
-                                <a href="">delete</a>
-                            </span>
-                        </td>
-                    </tr>
+                    <?php
+                        echo listarProductos();
+                    ?>
                 </table>
                 <div class="boton-agregar-producto texto-principal"><a href="editar_producto.php?modo=agregar">Agregar producto</a></div>
             </div>
