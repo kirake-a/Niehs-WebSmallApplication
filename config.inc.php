@@ -2,7 +2,7 @@
 $GLOBALS["server"] = "localhost"; 
 $GLOBALS["user"] = "root";
 $GLOBALS["password"] = "";
-$GLOBALS["data_base"] = "catalogo-niehs";
+$GLOBALS["data_base"] = "catalogue";
 
 $GLOBALS["root_site"] = "http://localhost/niehs/";
 ?>
