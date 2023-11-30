@@ -27,6 +27,9 @@ if (accion === 'agregar') {
     modo.textContent = 'Añadir producto';
 
 } else if (accion === 'editar') {
+    document.getElementById('genero_producto').disabled = true;
+    document.getElementById('tipo_producto').disabled = true;
+
     modo.textContent = 'Editar producto';
     id_label.textContent = id_producto;
 
@@ -131,6 +134,8 @@ function editar(producto){
             };
             xhttp.open("POST", "../funciones/modificar_producto.php", true);
             xhttp.send(formData); 
+
+            window.location.href = "../views/menu_administrador.php";
         }
     }else{
         alert("Por favor llena todos los campos");

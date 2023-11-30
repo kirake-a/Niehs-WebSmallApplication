@@ -78,7 +78,7 @@ validarSesion();
                         <select class="seleccion" id=tipo_producto>
                             <option value="NULL"></option>
                             <option value="Conjunto">Conjunto</option>
-                            <option value="Ropa deportiva">Ropa deportiva</option>
+                            <option value="Deportivo">Deportivo</option>
                             <option value="Sudadera">Sudadera</option>
                             <option value="Chaqueta/abrigo">Chaqueta/abrigo</option>
                             <option value="Accesorio">Accesorio</option>

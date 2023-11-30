@@ -42,7 +42,7 @@
             editarDatos($pconexion, $cquery);
     
             cerrarConexion($pconexion);
-            $response = array("mensaje" => "Producto modificado");
+            $response = array("mensaje" => "Producto modificado con imagen");
             echo json_encode($response);
         } else {
             $response = array("mensaje" => "Producto no modificado");
@@ -59,7 +59,7 @@
         editarDatos($pconexion, $cquery);
 
         cerrarConexion($pconexion);
-        $response = array("mensaje" => "Producto modificado");
+        $response = array("mensaje" => "Producto modificado sin imagen");
         echo json_encode($response);
     }
 
