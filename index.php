@@ -24,9 +24,10 @@
             <span class=" block font-medium text-gray-400 text-3xl">Inicio de sesión</span>
             <span id="errorSpan" style="color: red"></span>
             <?php
-                if (isset($userNotFound)) {
-                    //echo $userNotFound;
-                    echo '<span style="color: red">'.$userNotFound.'</span>';
+                session_start();
+                if (isset($_SESSION["userNotFound"])) {
+                    echo '<span style="color: red">'.$_SESSION["userNotFound"].'</span>';
+                    unset($_SESSION['userNotFound']);
                 }
             ?>
         </div>

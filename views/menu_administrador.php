@@ -1,6 +1,7 @@
 <?php
 include_once("../funciones/mantener_sesion.php");
-validarSesion();
+$user_key = 0;
+validarSesion($user_key);
 ?>
 
 <!DOCTYPE html>

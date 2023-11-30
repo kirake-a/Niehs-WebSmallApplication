@@ -200,11 +200,35 @@ a:hover {
     font-family: 'Inter', sans-serif;
 }
 
+#botonCerrarSesion {
+    border-radius: 10px;
+    font-family: 'Inter', sans-serif;
+    margin: 15px;
+    padding: 15px;
+    background-color: white;
+    color: #465362;
+    font-weight: 500;
+}
+
+#botonCerrarSesion:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#botonCerrarSesion:active {
+    background-color: #465362;
+    color: white;
+    box-shadow: none;
+    border: 1px solid white;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
 .contenedor_carrito_usuario {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     width: 100%;
     padding: 0;
+    position: absolute;
+    margin: -40;
 }
 
 .carrito a, .usuario_icono a{

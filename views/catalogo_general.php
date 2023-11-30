@@ -1,6 +1,7 @@
 <?php
 include_once("../funciones/mantener_sesion.php");
-validarSesion();
+$user_key = 0;
+validarSesion($user_key);
 ?>
 
 <!DOCTYPE html>
@@ -10,10 +11,11 @@ validarSesion();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalogo general</title>
 
-
     <!--Estilos del carrito vacio-->
     <link rel="stylesheet" href="../css/catalogo_general.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <script src="../js/manejador_logout.js" defer></script>
 </head>
 <body>
 
