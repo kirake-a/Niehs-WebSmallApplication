@@ -1,4 +1,7 @@
 <?php
+include_once("../config.inc.php"); 
+include_once("../funciones/acceder_base_datos.php");
+include_once("../funciones/listar.php");
 include_once("../funciones/mantener_sesion.php");
 validarSesion();
 ?>
@@ -105,5 +108,7 @@ validarSesion();
             </div>
         </div>
     </main>
+
+    <script src="../js/modo_administar_eliminacion.js"></script>
 </body>
 </html>
