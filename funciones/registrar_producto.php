@@ -4,32 +4,50 @@ include_once("../config.inc.php");
 include_once("acceder_base_datos.php");
 
 
-$pconexion = abrirConexion();
-seleccionarBaseDatos($pconexion);
-
-// Datos del producto
-$data = json_decode(file_get_contents('php://input'), true);
-
-$descripcion = $data['descripcion'];
-$precio = $data['precio'];
-$existencia = $data['existencia'];
-$imagen = $data['imagen'];
-$tipo = $data['tipo'];
-$talla = $data['talla'];
-$color = $data['color'];
-$genero = $data['genero'];
+$descripcion = $_POST['descripcion'];
+$precio = $_POST['precio'];
+$existencia = $_POST['existencia'];
+$tipo = $_POST['tipo'];
+$talla = $_POST['talla'];
+$color = $_POST['color'];
+$genero = $_POST['genero'];
 
 
-$cquery = "INSERT INTO product "; 
-$cquery .= " (description,cost,amount,image_name,type,size,color,gender) VALUES ";
-$cquery .= "('$descripcion', $precio, $existencia, '$imagen', '$tipo', '$talla', '$color', '$genero')";
+$tipo_directorio = strtolower($tipo);
+$genero_directorio = strtolower($genero);
+if(tieneCaracterEspecifico($tipo_directorio,'/') || tieneCaracterEspecifico($tipo_directorio,' ')){
+    $tipo_directorio = str_replace('/', '-', $tipo_directorio);
+    $tipo_directorio = str_replace(' ', '-', $tipo_directorio);
+}
 
-insertarDatos($pconexion, $cquery);
+$ruta_destino = __DIR__ . "/../imagenes/productos/" . $genero_directorio . "/" . $tipo_directorio . "/"; 
+$nombre_archivo = $_FILES['imagen']['name'];
+$ruta_temporal = $_FILES['imagen']['tmp_name'];
+$ruta_final = $ruta_destino . $nombre_archivo;
 
-cerrarConexion($pconexion);
-$response = array("mensaje" => "Producto añadido");
-echo json_encode($response);
 
+if (move_uploaded_file($ruta_temporal, $ruta_final)) {
+    $pconexion = abrirConexion();
+    seleccionarBaseDatos($pconexion);
+
+    $cquery = "INSERT INTO product "; 
+    $cquery .= " (description,cost,amount,image_name,type,size,color,gender) VALUES ";
+    $cquery .= "('$descripcion', $precio, $existencia, '$nombre_archivo', '$tipo', '$talla', '$color', '$genero')";
+
+    insertarDatos($pconexion, $cquery);
+
+    cerrarConexion($pconexion);
+    $response = array("mensaje" => "Producto añadido");
+    echo json_encode($response);
+} else {
+    $response = array("mensaje" => "Producto no añadido");
+    echo json_encode($response);
+}
+
+
+function tieneCaracterEspecifico($cadena, $caracter) {
+    return strpos($cadena, $caracter) !== false;
+}
 
 exit();
 
