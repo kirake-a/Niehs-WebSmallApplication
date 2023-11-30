@@ -1,3 +1,9 @@
+<?php
+include_once("../funciones/mantener_sesion.php");
+validarSesion();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,7 +51,7 @@
     </header>  
 
     <main>
-        <form class="main-frame" id="datosProducto">
+        <form class="main-frame" id="datosProducto" method="post" enctype="multipart/form-data">
             <div class="contenedor-atributo-imagen">
                 <div class="contenedor-imagen" id="contenedor-imagen"></div>
                 <div class="contenedor-boton-imagen">
@@ -56,8 +62,7 @@
             <div class="contenedor-atributos">
                 <div class="contenedor-superior">
                     <div class="contenedor-id">
-                        <label for="id_producto">ID: </label>
-                        <input type="text" id="id_producto" class="id" readonly>
+                        <p>ID: </p><p id=id_label></p>
                     </div>
                     <div class="contenedor-boton-salir">
                         <a href="menu_administrador.php">
@@ -72,12 +77,12 @@
                     <div class="contenido-atributo">
                         <select class="seleccion" id=tipo_producto>
                             <option value="NULL"></option>
-                            <option value="CONJUNTO">Conjunto</option>
-                            <option value="ROPA DEPORTIVA">Ropa deportiva</option>
-                            <option value="SUDADERA">Sudadera</option>
-                            <option value="CHAQUETA/ABRIGO">Chaqueta/Abrigo</option>
-                            <option value="ACCESORIO">Accesorio</option>
-                            <option value="ROPA INTERIOR">Ropa interior</option>
+                            <option value="Conjunto">Conjunto</option>
+                            <option value="Deportivo">Deportivo</option>
+                            <option value="Sudadera">Sudadera</option>
+                            <option value="Chaqueta/abrigo">Chaqueta/abrigo</option>
+                            <option value="Accesorio">Accesorio</option>
+                            <option value="Ropa interior">Ropa interior</option>
                         </select>
                     </div>
                 </div>
@@ -86,9 +91,9 @@
                     <div class="contenido-atributo">
                         <select class="seleccion" id=talla_producto>
                             <option value="NULL"></option>
-                            <option value="SMALL">C</option>
-                            <option value="MEDIA">M</option>
-                            <option value="LARGE">G</option>
+                            <option value="C">C</option>
+                            <option value="M">M</option>
+                            <option value="G">G</option>
                         </select>
                     </div>
                 </div>
@@ -97,8 +102,8 @@
                     <div class="contenido-atributo">
                         <select class="seleccion" id=genero_producto>
                             <option value="NULL"></option>
-                            <option value="Mujer">MUJER</option>
-                            <option value="Hombre">HOMBRE</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Hombre">Hombre</option>
                         </select>
                     </div>
                 </div>

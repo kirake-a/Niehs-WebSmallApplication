@@ -9,15 +9,33 @@
   'opsz' 24
 }
 
-.material-symbols-outlined a {
+table tr .acciones span {
     color: #003344;
     border: 1px solid #003344;
     background-color: #F5F5F2;
     border-radius: 5px;
+    width: 23px;
 }
 
-.material-symbols-outlined a:hover {
-    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+table tr .acciones span a {
+    text-shadow: 7px 7px 15px rgba(0, 0, 0, 0.2);
+    color: #003344;
+}
+
+table tr .acciones .delete a:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid #003344;
+    background-color: rgb(196, 7, 7);
+    border-radius: 5px;
+}
+
+table tr .acciones .edit a:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    color: white;
+    border: 1px solid #003344;
+    background-color: #007753;
+    border-radius: 5px;
 }
 
 /* Fuentes */
@@ -121,7 +139,7 @@ main {
 }
 
 .acciones > span {
-    margin-right: -70px;
+    margin-right: 15px;
 }
 
 .boton-agregar-producto {

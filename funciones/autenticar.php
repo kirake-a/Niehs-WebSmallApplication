@@ -5,7 +5,7 @@ include_once("../funciones/mantener_sesion.php");
 
 if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
 
-  $curl = "Location:" . $GLOBALS["root_site"] . "index.php";
+  $redirection = "Location:" . $GLOBALS["root_site"] . "index.php";
   $adatos = array();
   $pconexion = abrirConexion();
   seleccionarBaseDatos($pconexion);
@@ -32,19 +32,19 @@ if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
 
     //Verificar si es administrador o es cliente
     if ($adatos["rol"] == 1) {
-      $curl = "Location:" . $GLOBALS["root_site"] . "views/menu_administrador.php";
+      $redirection = "Location:" . $GLOBALS["root_site"] . "views/menu_administrador.php";
     } else if ($adatos["rol"] == 0) {
-      $curl = "Location:" . $GLOBALS["root_site"] . "views/catalogo_general.php";
+      $redirection = "Location:" . $GLOBALS["root_site"] . "views/catalogo_general.php";
     }
 
   } else {
-    // Usuario no encontrado, establecer mensaje de error
+    session_start();
     $userNotFound = "* Su correo o contraseña son incorrectos.\nIntentelo nuevamente, por favor.";
-    $curl = "Location:" . $GLOBALS["root_site"] . "index.php";
+    $_SESSION["userNotFound"] = $userNotFound;
   }
 
   cerrarConexion($pconexion);
-  header($curl);
+  header($redirection);
   exit();
 }
 ?>
