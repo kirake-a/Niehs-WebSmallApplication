@@ -1,30 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;600&display=swap');
 
 .contenedor {
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
+    padding: 10rem 5rem;
+    width: auto;
+    display: grid;
+    gap: 6rem;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .rectangulo-contenedor {
-    margin-top: 100px;
     position: relative;
+    width: 90%;
+    margin-bottom: 5rem;
+}
+
+.rectangulo-enlace{
+    width: 100%;
 }
 
 .rectangulo {
-    width: 254px;
-    height: 350px;
+    width: auto;
+    height: 420px;
     background-color: #D4D4D4;
     position: relative;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .rectangulo-azul {
-    width: 96px;
-    height: 32px;
+    width: 40%;
+    height: 40px;
     background-color: #3185A1;
     position: absolute;
     top: -16px;
     right: -16px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+
 }
 
 .precio {
@@ -42,11 +55,12 @@
     /* texto */
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    font-size: 12px;
+    font-size: 15px;
     text-align: center;
     color: black;
     /* contenedor */
-    width: 254px;
+    width: 30%px;
     padding: 5px;
-    margin-bottom: 100px;
+    margin-top: 1.5rem;
+
 }

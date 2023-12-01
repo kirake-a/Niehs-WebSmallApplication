@@ -20,7 +20,7 @@ html {
 
 /** Globales **/
 body {
-    background-color: var(--blanco);
+    background-color: var(--arena);
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -122,27 +122,27 @@ a:hover {
 }
 
 .nav_lista_elemento{
-    width: 50%;
+    width: 100%;
     margin: auto;
 }
 
-.nav_lista_elemento:hover{
-    background-color: var(--primarioOscuro);
-}
+
 
 .btn_nav{
     font-size: 3.6rem;
     color: var(--blanco);
     display: block;
     padding: 1rem 0;
+    transition: background-color 0.3s ease;
 }
 
 
-.btn_nav:hover{
+.btn_nav:hover, .btn_nav:visited{
     text-shadow: var(--sobra);
+    background-color: var(--primarioOscuro);
 }
 
-.colorBtn-click{
+.btn_genero_activo{
     background-color: var(--primarioOscuro);
 }
 
@@ -225,13 +225,13 @@ a:hover {
 .contenedor_carrito_usuario {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 10%;
     padding: 0;
     position: absolute;
-    margin: -40;
+    left: 85%;
 }
 
-.carrito a, .usuario_icono a{
+.carrito_logo a, .usuario_icono a{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -240,24 +240,20 @@ a:hover {
     top: 0.5rem;
 }
 
-.carrito span, .usuario_icono span{
+.carrito_logo span, .usuario_icono span{
     font-size: 3rem;
     color: var(--blanco);
 }
 
-.carrito span:hover, .usuario_icono span:hover{
+.carrito_logo span:hover, .usuario_icono span:hover{
     font-size: 3rem;
     color: var(--blanco);
     text-shadow: var(--sobra);
 }
 
 .nav_principal {
-    background-color: var(--primarioOscuro);
     width: 100%;
-}
-
-.active {
-    left: 0;
+    background-color: var(--primarioOscuro);
 }
 
 .nav_principal_lista{
@@ -269,21 +265,25 @@ a:hover {
 }
 
 .nav_principal_elemento{
-    background-color: var(--primarioOscuro);
     width: 100%;
     text-align: center;
 }
 
-.nav_principal_elemento a {
+a[name="btn_nav_principal"] {
     color: var(--blanco);
     padding: 0.6em 2rem;
     display: block;
 }
 
-.nav_principal_elemento a:hover, .nav_principal_elemento a:focus{
+a[name="btn_nav_principal"]:hover{
     background-color: var(--arena);
     color: var(--negro);
 }
+
+.nav_principal_activo{
+    background-color: var(--arena);
+}
+
 
 
 /* FOOTER */

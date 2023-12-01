@@ -66,5 +66,6 @@
     
     <script src="../js/footer.js"></script>
     <script src="../js/header.js"></script>
+    <script src="../js/barra_navegacion.js"></script>
 </body>
 </html>
