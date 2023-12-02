@@ -10,11 +10,13 @@ seleccionarBaseDatos($bdConexion);
 $id = isset($_GET["id_producto"]) ? $_GET["id_producto"] : "";
 $token = isset($_GET["token"]) ? $_GET["token"] : "";
 
+$pageNotFound404 = '<span style="font-size: 20px; font-weight: bold; font-family: sans-serif;">
+¡Discúlpanos, nos topamos con un error al procesar tu solicitud!</span></br>';
+$pageNotFound404 .= '</br><img src="../imagenes/error.jpg" style="text-align: center;"></br></br>';
+$pageNotFound404 .= '<span style="font-weight: BOLD; font-family: sans-serif;">ERROR: 404</span>';
+
 if ($id == '' || $token == '') {
-    echo '<span class="material-symbols-outlined">
-    error
-    </span><br>';
-    echo 'Lo sentimos mucho, pero no pudimos procesar tu pedicion de forma adecuada';
+    echo $pageNotFound404;
     exit;
 } else {
     $token_tmp = hash_hmac('sha1', $id, KEY_TOKEN);
@@ -41,10 +43,14 @@ if ($id == '' || $token == '') {
                 $dir_images .= 'mujer/'.$type.'/'.$imagen;
             }
 
+            if (!file_exists($dir_images)) {
+                $dir_images = '../imagenes/error.jpg';
+            }
+
         }
  
     } else {
-        echo 'Error al procesar la peticion';
+        echo $pageNotFound404;
         exit;
     }
 }
