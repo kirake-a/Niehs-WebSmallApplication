@@ -36,7 +36,7 @@ require '../config/constants.php';
 				$urlIMG = '../imagenes/productos/'.$genero.'/'.$tipoURL.'/'.$adatos['image_name'];
 
 				$token = hash_hmac('sha1', $id_producto, KEY_TOKEN);
-				$hrefVistaIndividual = '../views/producto.php?id_producto='.$id_producto.'&token='.$token.'&genero='.$genero.'&tipo='.$tipoURL;
+				$hrefVistaIndividual = '../views/producto.php?id_producto='.$id_producto.'&token='.$token.'&genero='.$gender.'&tipo='.$tipoURL;
 
                 //Primer producto de la fila del contenido
 				$ccontenido .= '<div class="rectangulo-contenedor">';
