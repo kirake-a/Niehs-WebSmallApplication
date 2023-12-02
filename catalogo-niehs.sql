@@ -26,7 +26,7 @@ INSERT INTO `product` (
     `color`,
     `gender`
     ) VALUES
-(1, 'Manfinity Sporsity Hombres Pantalones deportivos con capucha con estampado de letra de color combinado con bolsillo de canguro con cordon', 532.95, 10, 'nasa_manfinity_hombre.jpg', 'Conjunto', 'M', 'Negro', 'Hombre'), 
+(1, 'Manfinity Sporsity Hombres Pantalones deportivos con capucha con estampado de letra de color combinado con bolsillo de canguro con cordon', 532.95, 10, 'conjunto_nasa_manfinity_hombre.jpg', 'Conjunto', 'M', 'Negro', 'Hombre'), 
 (2, 'Manfinity Basics Hombres Camisa unicolor con botón delantero & Pantalones de cintura con cordón sin camiseta', 536, 7, 'conjunto_basics_manfinity_hombre.jpg', 'Conjunto', 'G', 'Negro', 'Hombre'), 
 (3, 'Manfinity Homme Hombres Camisa de rayas & Shorts de cintura con cordón sin camiseta', 426, 8, 'conjunto_homme_manfinity_hombre.jpg', 'Conjunto', 'C', 'Multicolor', 'Hombre'), 
 (4, 'Manfinity Homme Hombres talla grande Pantalones deportivos con sudadera con estampado de letra', 680, 6, 'conjunto_homme_manfinity_king.jpg', 'Conjunto', 'M', 'Albaricoque', 'Hombre'), 
@@ -38,10 +38,10 @@ INSERT INTO `product` (
 (10, 'Manfinity Homme Hombres Capucha de dos tonos con bolsillo de canguro con cordón', 391, 8, 'sudadera_hombre_hoddie_caqui.jpg', 'Sudadera', 'G', 'Caqui', 'Hombre'), 
 (11, 'Hombres Capucha con estampado de letra con bolsillo de canguro con cordón', 344, 5, 'sudadera_hombre_hoddie_negro.jpg', 'Sudadera', 'C', 'Negro', 'Hombre'), 
 (12, 'Manfinity Homme Sudadera Con Capucha Para Hombre Con Estampado De Letras Y Cordón', 356, 9, 'sudadera_hombre_hoddie_celeste.jpg', 'Sudadera', 'C', 'Celeste', 'Hombre'), 
-(13, 'Chaqueta de cuero para hombre', 500, 6, 'chaquetaHombre1.jpg', 'Chaqueta/Abrigo', 'M', 'Beige', 'Hombre'), 
-(14, 'Abrigo formal de botones para hombre', 1200, 5, 'chaquetaHombre2.jpg', 'Chaqueta/Abrigo', 'G', 'Gris', 'Hombre'), 
-(15, 'Abrigo formal con cinto para hombre', 700, 5, 'chaquetaHombre3.jpg', 'Chaqueta/Abrigo', 'M', ' Gris', 'Hombre'), 
-(16, 'Chaqueta casual para hombre', 550, 7, 'chaquetaHombre4.jpg', 'Chaqueta/Abrigo', 'G', 'Cafe', 'Hombre'), 
+(13, 'Chaqueta de cuero para hombre', 500, 6, 'chaquetaHombre1.jpg', 'Chaqueta/abrigo', 'M', 'Beige', 'Hombre'), 
+(14, 'Abrigo formal de botones para hombre', 1200, 5, 'chaquetaHombre2.jpg', 'Chaqueta/abrigo', 'G', 'Gris', 'Hombre'), 
+(15, 'Abrigo formal con cinto para hombre', 700, 5, 'chaquetaHombre3.jpg', 'Chaqueta/abrigo', 'M', ' Gris', 'Hombre'), 
+(16, 'Chaqueta casual para hombre', 550, 7, 'chaquetaHombre4.jpg', 'Chaqueta/abrigo', 'G', 'Cafe', 'Hombre'), 
 (17, 'Reloj avanzado para hombre', 300, 8, 'accesorioHombre1.jpg', 'Accesorio', 'M', ' Negro', 'Hombre'), 
 (18, 'Reloj sencillo para hombre', 200, 10, 'accesorioHombre2.jpg', 'Accesorio', 'M', 'Negro', 'Hombre'), 
 (19, 'Sombrero con pluma para hombre', 400, 5, 'accesorioHombre3.jpg', 'Accesorio', 'G', 'Naranja', 'Hombre'), 

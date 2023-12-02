@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 
     <script src="../js/manejador_logout.js" defer></script>
+
 </head>
 <body>
     <header class="header">
@@ -32,22 +34,24 @@
                     </div>
                 </form>
             </div>
+            
             <div class="contenedor_genero">
                 <ul class="nav_lista">
                     <li class="nav_lista_elemento">
-                        <a name="btn_nav" class="btn_nav">
+                        <a id="hombre_enlace" href="../views/catalogo_general.php?genero=Hombre&tipo=noType" name="btn_genero"  class="btn_nav" >
                             Hombre
                         </a>
                     </li>
                     <li class="nav_lista_elemento">
-                        <a name="btn_nav" class="btn_nav">
+                        <a id="mujer_enlace" href="../views/catalogo_general.php?genero=Mujer&tipo=noType" name="btn_genero" class="btn_nav" >
                             Mujer   
                         </a>
                     </li>
                 </ul>
             </div>
+            
             <div class="contenedor_carrito_usuario">
-                <div class="carrito">
+                <div class="carrito_logo">
                     <a href="">
                         <span class="material-symbols-outlined">
                             shopping_cart
@@ -67,32 +71,34 @@
         <nav id="sidebar" class="nav_principal">
             <ul class="nav_principal_lista">
                 <li class="nav_principal_elemento">
-                    <a href="#" class="">
+                    <a id="conjunto_link" href="../views/catalogo_general.php?tipo=Conjunto"
+                     name="btn_nav_principal"  class="">
                         Conjuntos
                     </a>
                 </li>
                 <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
+                    <a id="deportivo_link" href="../views/catalogo_general.php?tipo=Deportivo" 
+                        name="btn_nav_principal"  >
                         Ropa deportiva
                     </a>
                 </li>
                 <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
+                    <a id="sudadera_link" href="../views/catalogo_general.php?tipo=Sudadera" name="btn_nav_principal" class=" ">
                         Sudadera
                     </a>
                 </li>
                 <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
+                    <a id="chaqueta_link" href="../views/catalogo_general.php?tipo=Chaqueta/Abrigo" name="btn_nav_principal"  class=" ">
                         Chaquetas y abrigos
                     </a>
                 </li>
                 <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
+                    <a id="accesorio_link" href="../views/catalogo_general.php?tipo=Accesorio" name="btn_nav_principal"  class=" ">
                         Accesorios
                     </a>
                 </li>
                 <li class="nav_principal_elemento">
-                    <a href="#" class=" ">
+                    <a id="interior_link" href="../views/catalogo_general.php?tipo=Ropa interior" name="btn_nav_principal" class=" ">
                         Ropa interior
                     </a>
                 </li>
@@ -102,12 +108,9 @@
         
     </header>
 
-    
-
     <main>
-    
+        
     </main>
-    
-    <script src="../js/barra_navegacion.js"></script>
+
 </body>
 </html>
