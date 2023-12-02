@@ -1,8 +1,10 @@
 <?php
-include_once("../config.inc.php");
+include_once("../config.inc.php"); 
 include_once("../funciones/acceder_base_datos.php");
 include_once("../funciones/mantener_sesion.php");
 include_once("../funciones/catalogo_productos.php");
+$user_key = 0;
+validarSesion($user_key);
 
 $bdConexion = abrirConexion();
 seleccionarBaseDatos($bdConexion);
@@ -121,6 +123,8 @@ cerrarConexion($bdConexion);
     <script src="../js/footer.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/barra_navegacion.js"></script>
+    <script src="../js/manejador_logout.js"></script>
+
     
 </body>
 </html>
