@@ -1,3 +1,11 @@
+<?php
+include_once("../config.inc.php"); 
+include_once("../funciones/acceder_base_datos.php");
+include_once("../funciones/mantener_sesion.php");
+$user_key = 0;
+validarSesion($user_key);
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -36,7 +44,7 @@
                 </div>
             </div>
             <div class="button-content">
-                <a href="#">Descubrir productos</a>
+                <a href="../views/catalogo_general.php">Descubrir productos</a>
             </div>
         </section>
 
@@ -46,6 +54,7 @@
 
     <script src="../js/footer.js"></script>
     <script src="../js/header.js"></script>
+    <script src="../js/ir_al_carrito.js"></script>
 
 </body>
 

@@ -4,7 +4,9 @@ document.addEventListener("DOMContentLoaded", function() {
       .then(response => response.text())
       .then(html => {
         document.querySelector(".header-contenedor").innerHTML = html;
+        document.dispatchEvent(new Event("headerCargado"));
       });
+      
   });
   
   

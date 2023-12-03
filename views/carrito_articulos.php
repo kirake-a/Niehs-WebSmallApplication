@@ -1,3 +1,13 @@
+<?php
+include_once("../config.inc.php"); 
+include_once("../funciones/acceder_base_datos.php");
+include_once("../funciones/mantener_sesion.php");
+include_once("../funciones/catalogo_productos.php");
+include_once("../funciones/listar_carrito.php");
+$user_key = 0;
+validarSesion($user_key);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +26,11 @@
             <div class="title">
                 <h2>Productos en carrito</h2>
             </div>
-            <div class="products"></div>
+            <div class="products">
+                <?php
+                echo listarCarrito();
+                ?>
+            </div>
         </section>
 
         <section class="resumen-pago">
@@ -37,7 +51,7 @@
                 </div>
 
                 <div class="pay-container">
-                    <input class="pay" type="submit" value="Proceder al pago">
+                    <input class="pay" type="submit" value="Pagar">
                 </div>
             </form>
         </section>
@@ -48,6 +62,9 @@
 
     <script src="../js/footer.js"></script>
     <script src="../js/header.js"></script>
-    
+    <script src="../js/manejador_carrito.js"></script>
+    <script src="../js/ir_al_carrito.js"></script>
+    <script src="../js/manejador_logout.js"></script>
+
 </body>
 </html>

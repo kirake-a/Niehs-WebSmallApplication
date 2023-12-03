@@ -93,7 +93,7 @@ function editarDatos($pconector, $cquery){
  if (!$lresult){
    $cerror = "Ocurri&oacute; un error al acceder a la base de datos.<br>";
    $cerror .= "SQL: $cquery <br>";
-   $cerror .= "Descripci&oacute;n: ".mysqli_connect_error($pconector);
+   $cerror .= "Descripci&oacute;n: ".mysqli_connect_error($pconector); 
    die($cerror);
  }
  else{

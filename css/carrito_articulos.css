@@ -53,11 +53,67 @@
     border-radius: 10px;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
     position: relative;
+    overflow-y: scroll;
+    
 }
+
+.contenedor-producto{
+    display: flex;
+}
+
+
+
+.products{
+    width: 90%;
+    display: flex; 
+    flex-direction: column;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
 
 .title {
     text-align: center;
     margin: 50px;
     font-family: 'DM Serif Text', serif;
     font-size: 30px;
+}
+
+.imagen-producto{
+    width: 20em;
+}
+
+.producto-detalles{
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    font-family: var(--inter);
+}
+
+.producto-descripcion{
+    font-size: 25px;
+}
+
+.producto-costo{
+    font-size: 25px;
+}
+
+.producto-detalles-finales{
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.producto-boton-eliminar{
+    border: none;
+    background: none;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.producto-id{
+    visibility: hidden;
 }
