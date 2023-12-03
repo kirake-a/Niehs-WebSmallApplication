@@ -24,6 +24,17 @@ function mostrarBotonCerrarSesion(event) {
 }
 
 function cerrarSesion() {
+
+    //Se destruyen las cookies antes de cerrar la sesión
+    var cookies = document.cookie.split(";");
+
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      var igualIndex = cookie.indexOf("=");
+      var nombre = igualIndex > -1 ? cookie.substr(0, igualIndex) : cookie;
+      document.cookie = nombre + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    }
+
     window.location.href = '../funciones/cerrar_sesion.php'
     console.log("Se ha enviado a cerrar sesion");
 }

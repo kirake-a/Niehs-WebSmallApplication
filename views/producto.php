@@ -88,6 +88,7 @@ cerrarConexion($bdConexion);
         <img src="<?php echo $dir_images?>" class="imagen-producto">
         </div>
         <div class="detalles">
+            <p class="id-producto"><?php echo $id?></p>
             <p class="descripcion-producto"><?php echo $descripcion; ?></p>
             <p class="precio-producto"><?php echo MONEDA.' '.number_format($precio, 2, '.', ','); ?></p>
             <div class="color">
@@ -124,6 +125,8 @@ cerrarConexion($bdConexion);
     <script src="../js/header.js"></script>
     <script src="../js/barra_navegacion.js"></script>
     <script src="../js/manejador_logout.js"></script>
+    <script src="../js/agregar_al_carrito.js"></script>
+    <script src="../js/ir_al_carrito.js"></script>
 
     
 </body>
