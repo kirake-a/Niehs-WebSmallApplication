@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Inter:wght@400;600&display=swap');
 
 .container {
-    margin: 0 60px;
+    margin: 5rem 60px;
+    position: relative;
 }
 
 .resumen-pago {
-    width: 30%;
+    width: 20%;
     height: 200px;
     border-radius: 10px;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
-    position: relative;
-    left: 850px;
-    bottom: 660px;
-    padding: 20px;
+    position: absolute;
+    left: 90rem;
+    top: 0rem;
+    padding: 1rem;
 }
 
 .subtotal, .iva, .total {
@@ -23,16 +24,14 @@
 
 .pay {
     position: absolute;
-    left: 90px;
     bottom: 20px;
-    text-align: center;
     width: auto;
-    padding: 0 2rem;
-    height: 72px;
+    left: 25%;
+    padding: 1rem 4rem;
     border-radius: 15px;
     background-color: #006D77;
     font-family: "Inter", sans-serif;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 550;
     color: white;
     border: none;
@@ -49,19 +48,16 @@
 
 .productos {
     width: 60%;
-    height: 662px;
+    max-height: 50rem;
     border-radius: 10px;
     box-shadow: 10px 10px 60px rgba(0, 0, 0, 0.3);
     position: relative;
     overflow-y: scroll;
-    
 }
 
 .contenedor-producto{
     display: flex;
 }
-
-
 
 .products{
     width: 90%;
@@ -74,13 +70,17 @@
 
 .title {
     text-align: center;
-    margin: 50px;
+    margin: 25px;
     font-family: 'DM Serif Text', serif;
     font-size: 30px;
 }
 
+.title h2 {
+    margin: 0;
+}
+
 .imagen-producto{
-    width: 20em;
+    width: 10em;
 }
 
 .producto-detalles{
@@ -88,20 +88,24 @@
     display: flex;
     flex-direction: column;
     font-family: var(--inter);
+    margin-left: 2rem;
 }
 
 .producto-descripcion{
-    font-size: 25px;
+    font-size: 15px;
+    margin-bottom: 1rem;
 }
 
-.producto-costo{
-    font-size: 25px;
+.producto-costo, .producto-disponible{
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
 }
 
 .producto-detalles-finales{
     display: flex;
     justify-content: space-between;
-    margin-top: auto;
+    margin: 2rem 0;
     font-weight: 600;
     font-size: 20px;
 }

@@ -103,6 +103,11 @@ main {
     margin-top: 60px;
 }
 
+#formFiltrar{
+    position: relative;
+    bottom: 4px;
+}
+
 .contenedor-principal {
     display: flex;
     flex-direction: column;

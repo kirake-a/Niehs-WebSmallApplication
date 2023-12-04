@@ -32,6 +32,7 @@ if ($id == '' || $token == '') {
             $precio = $datos['cost'];
             $color = $datos['color'];
             $talla = $datos['size'];
+            $cantidad = $datos['amount'];
             $valueTalla = definirTalla($datos['size']);
             $gender = strtolower($datos['gender']);
             $type = encontrarCarpetaTipo($datos['type']);
@@ -74,13 +75,14 @@ cerrarConexion($bdConexion);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto</title>
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/producto.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
+<body >
    <div class="header-contenedor"></div>
    
    <div class="main-frame">
@@ -94,6 +96,10 @@ cerrarConexion($bdConexion);
             <div class="color">
                 <p class="color-texto">Color: </p>
                 <p class="color-producto"><?php echo $color; ?></p>
+            </div>
+            <div class="color">
+                <p class="color-texto">Disponibles: </p>
+                <p class="color-producto"><?php echo $cantidad; ?></p>
             </div>
             <div class="talla">
                 <p class="talla-producto">Talla:</p>

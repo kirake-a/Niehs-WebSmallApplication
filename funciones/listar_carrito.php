@@ -67,6 +67,7 @@ function listarCarrito()
                     $ccontenido .= '<div class="producto-detalles"> ';
                     $ccontenido .= '<p class="producto-descripcion">' . $adatos["description"] . '</p> ';
                     $ccontenido .= '<p class="producto-costo">$' . $adatos["cost"] . '</p> ';
+                    $ccontenido .= '<p class="producto-disponible">Disponibles: ' . $adatos["amount"] . '</p> ';
                     $ccontenido .= '<div class="producto-detalles-finales"> ';
                     $ccontenido .= '<label>Cantidad: <input type="number" name="cantidad" id="cantidad" value="1" min="1" max="' . $adatos["amount"] . '" step="1"/></label> ';
                     $ccontenido .= '<button class="producto-boton-eliminar">Eliminar</button>';

@@ -15,6 +15,7 @@ validarSesion($user_key);
     <title>Catalogo general</title>
 
     <link rel="stylesheet" href="../css/header_footer.css">
+    <link rel="stylesheet" href="../css/normalize.css">
 
     <!--Estilos del catalogo general-->
     <link rel="stylesheet" href="../css/catalogo_general.css">
@@ -23,7 +24,7 @@ validarSesion($user_key);
     <script src="../js/manejador_logout.js" defer></script>
     
 </head>
-<body>
+<body >
 
     <div class="header-contenedor"></div>
     
@@ -32,6 +33,8 @@ validarSesion($user_key);
         <?php
         if(isset($_GET["genero"]) && isset($_GET["tipo"])){
             echo traerProductosPorTipoGenero($_GET["genero"], $_GET["tipo"]);
+        }else{
+            echo traerProductosPorTipoGenero(null,null);
         }
         ?>
         </div>

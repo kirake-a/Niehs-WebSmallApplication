@@ -5,11 +5,9 @@ include_once("acceder_base_datos.php");
 if (isset($_GET['type'])) {
     $type = $_GET['type'];
     echo listarProductos($type);
-} else {
-    echo "<p>Seleccione una opción para ver la información correspondiente.</p>";
 }
 
-function listarProductos($type = todo)
+function listarProductos($type = "todo")
 {
 
 	$ccontenido = "";
