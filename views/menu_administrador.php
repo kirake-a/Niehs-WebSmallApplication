@@ -25,7 +25,7 @@ validarSesion($user_key);
 
     <script src="../js/manejador_logout.js" defer></script>
 </head>
-<body>
+<body onload="actualizarVista()">
 
     <header class="header">
         <div class="header_nav">
@@ -61,40 +61,24 @@ validarSesion($user_key);
             <div class="texto-principal titulo">Administrar lista de productos</div>
             <div class="rectangulo-principal">
                 <div class="caja-ordenar texto-principal">
-                    <div class="cuerpo">Ordenar por:</div>
-                    <form action="">
-                        <select name="" id="">
-                            <option value="">ID</option>
-                            <option value="">DESCRIPCION</option>
-                            <option value="">COSTO</option>
-                            <option value="">CANTIDAD</option>
-                            <option value="">TIPO</option>
-                            <option value="">TAMA&Ntilde;O</option>
-                            <option value="">COLOR</option>
+                    <div class="cuerpo">Filtrar por:</div>
+                    <form method="post" action="">
+                        <select name="ordenar" id="ordenar" onchange="actualizarVista()">
+                            <option value="todo" selected>Mostrar todo</option>
+                            <option value="Conjunto">Conjunto</option>
+                            <option value="Accesorio">Accesorio</option>
+                            <option value="Chaqueta/abrigo">Chaqueta-Abrigo</option>
+                            <option value="Deportivo">Deportivo</option>
+                            <option value="Ropa interior">Ropa interior</option>
+                            <option value="Sudadera">Sudadera</option>
                         </select>
                     </form>
                 </div>
-                <table class="texto-principal tabla" id="tabla_admin">
-                    <tr>
-                        <th>ID</th>
-                        <th>DESCRIPCI&Oacute;N</th>
-                        <th>COSTO</th>
-                        <th>CANTIDAD</th>
-                        <th>TIPO</th>
-                        <th>TAMA&Ntilde;O</th>
-                        <th>COLOR</th>
-                        <th>G&Eacute;NERO</th>
-                        <th>ACCIONES</th>
-                    </tr>
-                    <?php
-                        echo listarProductos();
-                    ?>
-                </table>
+                <table class="texto-principal tabla" id="tabla_admin"></table>
                 <div class="boton-agregar-producto texto-principal"><a href="editar_producto.php?modo=agregar">Agregar producto</a></div>
             </div>
         </div>
     </main>
-
-    <script src="../js/modo_administar_eliminacion.js"></script>
+    <script src="../js/actualizar_lista_productos.js"></script>
 </body>
 </html>

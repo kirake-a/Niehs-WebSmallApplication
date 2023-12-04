@@ -1,5 +1,15 @@
 <?php
-function listarProductos()
+include_once("../config.inc.php");
+include_once("acceder_base_datos.php");
+
+if (isset($_GET['type'])) {
+    $type = $_GET['type'];
+    echo listarProductos($type);
+} else {
+    echo "<p>Seleccione una opción para ver la información correspondiente.</p>";
+}
+
+function listarProductos($type = todo)
 {
 
 	$ccontenido = "";
@@ -9,6 +19,11 @@ function listarProductos()
 	seleccionarBaseDatos($pconexion);
 	//Construcción de la sentencia SQL
 	$cquery = "SELECT * FROM product";
+
+    // Si se especifica un tipo y no es "todo", agregar una condición WHERE al query
+    if (!is_null($type) && strtolower($type) !== "todo") {
+        $cquery .= " WHERE type = '" . mysqli_real_escape_string($pconexion, $type) . "'";
+    }
 
 	//Se ejecuta la sentencia SQL
 	$lresult = mysqli_query($pconexion, $cquery);
@@ -21,6 +36,9 @@ function listarProductos()
 	} else {
 		//Verifica que la consulta haya devuelto por lo menos un registro
 		if (mysqli_num_rows($lresult) > 0) {
+			$ccontenido .="<tr><th>ID</th><th>DESCRIPCI&Oacute;N</th><th>COSTO</th><th>CANTIDAD</th>";
+			$ccontenido .="<th>TIPO</th><th>TAMA&Ntilde;O</th><th>COLOR</th><th>G&Eacute;NERO</th>";
+			$ccontenido .="<th>ACCIONES</th></tr>";
 			//Recorre los registros arrojados por la consulta SQL
 			while ($adatos = mysqli_fetch_array($lresult, MYSQLI_BOTH)) {
 				$cid_producto = $adatos["id_producto"]; //**
@@ -39,7 +57,7 @@ function listarProductos()
 				$ccontenido .= '<td class="acciones">';
 				$ccontenido .= '<span class="material-symbols-outlined edit"><a href="editar_producto.php?modo=editar&id='.$adatos["id_producto"].'">edit_square</a></span>';
 				$ccontenido .= '<span class="material-symbols-outlined delete" id="delete" name="delete" data-id="<?php echo $adatos[\'id_producto\']; ?>">';
-				$ccontenido .= '<a href="../funciones/borrar.php?cid_producto='. $adatos["id_producto"] .'&gender='. $adatos["gender"] .'&type='. $adatos["type"] .'&image_name='. $adatos["image_name"] .'">delete</a></span>';
+				$ccontenido .= '<a href="../funciones/borrar.php?cid_producto='. $adatos["id_producto"] .'">delete</a></span>';
 				$ccontenido .= '</td>';
 
 				$ccontenido .= "</tr>";
