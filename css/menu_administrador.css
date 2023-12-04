@@ -68,6 +68,9 @@ table tr .acciones .edit a:hover {
     font-size: 12px;
     font-weight: bold;
     border-bottom: 3px solid #D9D9D9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .texto-principal td {
@@ -75,6 +78,7 @@ table tr .acciones .edit a:hover {
     border-bottom: 2px solid #D9D9D9;
     padding-top: 10px;
     padding-bottom: 10px;
+    padding-left: 10px;
 }
 
 .celda-descripcion {
@@ -121,6 +125,7 @@ main {
 }
 
 .caja-ordenar {
+    height: 30px;
     padding: 5px;
     background-color: #EEEEEE;
     border-radius: 10px;
@@ -130,7 +135,8 @@ main {
     margin-left: auto;
 
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
 .acciones {
