@@ -9,7 +9,14 @@
     $tipo = $_GET['type'];
     $nombre_imagen = $_GET['image_name'];
 
-    $ruta_destino = __DIR__ . "/../imagenes/productos/" . $genero . "/" . $tipo . "/"; 
+    $tipo_directorio = strtolower($tipo);
+    $genero_directorio = strtolower($genero);
+    if(tieneCaracterEspecifico($tipo_directorio,'/') || tieneCaracterEspecifico($tipo_directorio,' ')){
+        $tipo_directorio = str_replace('/', '-', $tipo_directorio);
+        $tipo_directorio = str_replace(' ', '-', $tipo_directorio);
+    }
+
+    $ruta_destino = __DIR__ . "/../imagenes/productos/" . $genero_directorio . "/" . $tipo_directorio . "/"; 
     $ruta_final = $ruta_destino . $nombre_imagen;
 
     if (file_exists($ruta_final)) {
@@ -33,7 +40,11 @@
     
         borrarDatos($pconexion, $cquery);
         cerrarConexion($pconexion);
-    }      
+    }
+    
+    function tieneCaracterEspecifico($cadena, $caracter) {
+        return strpos($cadena, $caracter) !== false;
+    }
 
     header($redirection);
     exit();
