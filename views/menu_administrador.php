@@ -15,8 +15,8 @@ validarSesion($user_key);
     <title>Vista admin principal</title>
 
     <!--Estilos del header-->
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/estilos_administrador.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos del body-->
@@ -26,7 +26,6 @@ validarSesion($user_key);
     <script src="../js/manejador_logout.js" defer></script>
 </head>
 <body onload="actualizarVista()">
-
     <header class="header">
         <div class="header_nav">
             <div class="logo">
@@ -62,7 +61,7 @@ validarSesion($user_key);
             <div class="rectangulo-principal">
                 <div class="caja-ordenar texto-principal">
                     <div class="cuerpo">Filtrar por:</div>
-                    <form method="post" action="">
+                    <form id="formFiltrar" method="post" action="">
                         <select name="ordenar" id="ordenar" onchange="actualizarVista()">
                             <option value="todo" selected>Mostrar todo</option>
                             <option value="Conjunto">Conjunto</option>

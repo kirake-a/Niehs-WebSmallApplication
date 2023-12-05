@@ -39,19 +39,19 @@ document.addEventListener("input", imprimirTotal);
 
 function imprimirSubtotal(){
     let labelSubtotal = document.getElementById("subtotal-valor");
-    labelSubtotal.textContent = calcularSubtotal();
+    labelSubtotal.textContent = calcularSubtotal().toFixed(2);
 }
 
 
 function imprimirIVA(){
     let iva = calcularIVA();
     let labelIva = document.getElementById("iva-valor");
-    labelIva.textContent = iva;
+    labelIva.textContent = iva.toFixed(2);
 }
 
 function imprimirTotal(){
     let labelTotal = document.getElementById("total-valor");
-    labelTotal.textContent = calcularSubtotal() + calcularIVA();
+    labelTotal.textContent = (calcularSubtotal() + calcularIVA()).toFixed(2);
 }
 
 
@@ -73,7 +73,7 @@ function realizarPago(){
     //Checa que las cantidades tengan valores válidos
     for (let i = 0; i < cantidades.length; i++) {
         if(parseInt(cantidades[i].value) > parseInt(cantidades[i].max)){
-            alert("Ingrese cantidades validas");
+            alert("Ingrese cantidades válidas");
             return;
         }
     }

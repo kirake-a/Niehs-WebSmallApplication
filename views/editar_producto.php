@@ -13,13 +13,15 @@ validarSesion($user_key);
     <title>Producto</title>
 
     <!--Estilos del header-->
-    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/estilos_administrador.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 
     <!--Estilos de la vista editar producto-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
     <link rel="stylesheet" href="../css/editar_producto.css">
+
 </head>
 <body>
     <header class="header">
@@ -41,7 +43,7 @@ validarSesion($user_key);
             </div>
             <div class="contenedor_usuario">
                 <div class="usuario_icono">
-                    <a href="">
+                <a href="#" id="cerrarSesionSpan" onclick="mostrarBotonCerrarSesion(event)">
                         <span class="material-symbols-outlined">
                             person
                         </span>
@@ -138,5 +140,7 @@ validarSesion($user_key);
     </main>
     <script src="../js/insertar_imagen.js"></script>
     <script src="../js/modo_administrar_producto.js"></script>
+    <script src="../js/manejador_logout.js" defer></script>
+
 </body>
 </html>

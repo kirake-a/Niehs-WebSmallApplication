@@ -14,14 +14,15 @@ validarSesion($user_key);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito vacío</title>
 
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="../css/normalize.css">
+
 
     <!--Estilos del carrito vacio-->
     <link rel="stylesheet" href="../css/carrito_vacio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
+    <script src="../js/manejador_logout.js"></script>
 </head>
 
 <body>
@@ -44,7 +45,7 @@ validarSesion($user_key);
                 </div>
             </div>
             <div class="button-content">
-                <a href="../views/catalogo_general.php">Descubrir productos</a>
+                <a href="../views/catalogo_general.php?genero=Hombre&tipo=noType">Descubrir productos</a>
             </div>
         </section>
 
@@ -55,7 +56,7 @@ validarSesion($user_key);
     <script src="../js/footer.js"></script>
     <script src="../js/header.js"></script>
     <script src="../js/ir_al_carrito.js"></script>
-
+    <script src="../js/barra_navegacion.js"></script>
 </body>
 
 </html>

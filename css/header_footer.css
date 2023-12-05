@@ -226,9 +226,10 @@ a:hover {
     display: flex;
     justify-content: flex-end;
     width: 10%;
+    gap: 3rem;
     padding: 0;
     position: absolute;
-    left: 85%;
+    left: 87%;
 }
 
 .carrito_logo a, .usuario_icono a{

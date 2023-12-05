@@ -68,6 +68,23 @@ document.addEventListener("DOMContentLoaded", function () {
             // Establece un intervalo para comprobar la existencia del elemento
             var intervalID = setInterval(verificarExistencia, 10); // Comprueba cada segundo
         } else {
+            console.log(valorParamGenero);
+
+                // Función para comprobar la existencia del elemento con el ID específico
+                function verificarExistencia2() {
+                    let barraCategorias = document.getElementById("sidebar");
+
+                    if (barraCategorias) {
+
+                        barraCategorias.style.display = "none";
+                        // Detén la comprobación después de encontrar el elemento
+                        clearInterval(intervalID);
+                    }
+                }
+
+            // Establece un intervalo para comprobar la existencia del elemento
+            var intervalID = setInterval(verificarExistencia2, 10); // Comprueba cada segundo
+
             console.log("El parámetro 'genero' no está presente en la URL.");
         }
     });

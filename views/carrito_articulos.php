@@ -16,6 +16,8 @@ validarSesion($user_key);
     <title>Tu carrito</title>
 
     <link rel="stylesheet" href="../css/carrito_articulos.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+
 </head>
 <body>
 
@@ -65,6 +67,7 @@ validarSesion($user_key);
     <script src="../js/manejador_carrito.js"></script>
     <script src="../js/ir_al_carrito.js"></script>
     <script src="../js/manejador_logout.js"></script>
+    <script src="../js/barra_navegacion.js"></script>
 
 </body>
 </html>

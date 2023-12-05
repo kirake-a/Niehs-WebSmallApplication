@@ -26,7 +26,7 @@
             <?php
                 session_start();
                 if (isset($_SESSION["userNotFound"])) {
-                    echo '<span style="color: red">'.$_SESSION["userNotFound"].'</span>';
+                    echo '<span id="spanError" style="color: red">'.$_SESSION["userNotFound"].'</span>';
                     unset($_SESSION['userNotFound']);
                 }
             ?>
