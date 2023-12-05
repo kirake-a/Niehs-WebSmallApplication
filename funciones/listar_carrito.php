@@ -11,22 +11,24 @@ function listarCarrito()
     //Array para guardar las filas recuperadas de la base de datos
     $queries = array();
 
-    //Se guarda el valor de la cookie de la sesión para no considerarla en la sentencia SQL
-    $valorSesion = reset($_COOKIE);
 
-    $numeroCookies = count($_COOKIE);
-    if($numeroCookies < 2){
-        header("Location: ../views/carrito_vacio.php");
-    }
+    //Contador para saber cuantas de las cookies pertenecen a productos
+    $contadorProductos = 0;
 
     //foreach para recorrer todas las cookies
     foreach($_COOKIE as $nombreCookie => $valorCookie){
-        //If para saltar la cookie con el valor de la sesión
-        if($valorCookie !== $valorSesion){
+        //Se comprueba si la cookie inicia con la subcadena "producto"
+        if(strpos($nombreCookie, "producto") === 0){
             //Construcción de la sentencia SQL
             $queries[] = "SELECT * FROM product WHERE id_producto = $valorCookie";
+            $contadorProductos++;
         }
        
+    }
+
+    //Si ninguna de las cookies fue de un producto, se va al carrito vacio
+    if($contadorProductos == 0){
+        header("Location: ../views/carrito_vacio.php");
     }
 
     //foreach para listar los productos en el carrito
