@@ -82,13 +82,11 @@ cerrarConexion($bdConexion);
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body >
+<body>
    <div class="header-contenedor"></div>
    
    <div class="main-frame">
-        <div class="imagen">
         <img src="<?php echo $dir_images?>" class="imagen-producto">
-        </div>
         <div class="detalles">
             <p class="id-producto"><?php echo $id?></p>
             <p class="descripcion-producto"><?php echo $descripcion; ?></p>
@@ -113,11 +111,11 @@ cerrarConexion($bdConexion);
             </div>
             <div class="servicios">
                 <div class="detalles-envio">
-                    <img src="../imagenes/tabler_truck-delivery.jpg" class="imagen-envio">
+                    <span class="material-symbols-outlined">local_shipping</span>
                     <p class="envio">Envío gratis</p>
                 </div>
                 <div class="detalles-devoluciones">
-                    <img src="../imagenes/carbon_delivery-parcel.jpg" class="imagen-devoluciones">
+                    <span class="material-symbols-outlined">quick_reorder</span>
                     <p class="devoluciones">Devoluciones gratis</p>
                 </div>
                 <p class="politicas">Consulte la política de envíos y devoluciones</p>
