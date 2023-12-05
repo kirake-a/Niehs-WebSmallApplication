@@ -29,6 +29,14 @@ if (isset($_POST["btn_enviar"]) && $_POST["btn_enviar"] == "Iniciar sesión") {
   if (mysqli_stmt_fetch($stmt)) {
     iniciarSesion($adatos["rol"]);
 
+    foreach($_COOKIE as $nombreCookie => $valorCookie){
+      //Se comprueba si la cookie inicia con la subcadena "producto"
+      if(strpos($nombreCookie, "producto") === 0){
+        setcookie($nombreCookie, "", time() - 3600, "/");
+      }
+     
+  }
+
     //Verificar si es administrador o es cliente
     if ($adatos["rol"] == 1) {
       $redirection = "Location:" . $GLOBALS["root_site"] . "views/menu_administrador.php";
