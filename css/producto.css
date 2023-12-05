@@ -13,21 +13,25 @@
     --inter: 'Inter', sans-serif;
 }
 
-
-
-
-.main-frame{
-    height: 50em;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 48
 }
 
-.imagen{
-    margin-top: 5em;
-    width: 60em;
-    margin-left: 15em;
+.main-frame{
+    margin: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .imagen-producto{
-    width: 50%;
+    width: 45%;
+    height: 45%;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
 }
 
 .imagen-producto-error{
@@ -42,35 +46,36 @@
 }
 
 .detalles{
-    position: absolute;
-    left: 55%;
-    top: 20%;
-    
+    width: 400px;
+    margin-left: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-items: flex-start;
 }
 
 .descripcion-producto{
-    font-family: var(--inter);
-    font-size: 20px;
-
+    font-family: 'Inter', sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
 }
 
 .precio-producto{
-    font-family: var(--inter);
-    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
 }
 
 .color{
-    display: flex;
-    
+    display: flex;    
 }
 
 .color-texto{
-    font-family: var(--inter);
+    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 20px;
 }
 
 .color-producto{
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     margin-left: 1em;
 }
@@ -90,63 +95,62 @@
 .boton{
     margin-top: 2em;
     margin-bottom: 2em;
-    
 }
 
 .boton-agregar{
     background-color: var(--verdeBtn);
-    width: 70%;
     color: white;
     font-family: 'Inter', sans-serif;
-    font-weight: 550;
-    height: 3em;
+    font-weight: bold;
+    padding: 20px;
     border-radius: 8px;
     font-size: 25px;
     cursor: pointer;
 }
 
+.boton-agregar:hover{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
 .servicios{
-    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+
     border: 1px;
     border-color: #B1B1B1;
     border-style: solid;
 }
 
 .detalles-envio{
+    margin-left: 1em;
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .envio{
+    margin-left: 1em;
     font-size: 15px;
-    font-family: var(--inter);
-    margin-left: 1em;
-}
-
-.imagen-envio{
-    height: auto;
-    width: auto;
-    margin-left: 1em;
+    font-family: 'Inter',sans-serif;
 }
 
 .detalles-devoluciones{
+    margin-left: 1em;
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .devoluciones{
+    margin-left: 1em;
     font-size: 15px;
-    font-family: var(--inter);
-    margin-left: 1em;
-}
-
-.imagen-devoluciones{
-    height: auto;
-    width: auto;
-    margin-left: 1em;
+    font-family: 'Inter',sans-serif;
 }
 
 .politicas{
     font-size: 15px;
-    font-family: var(--inter);
+    font-family: 'Inter',sans-serif;
     margin-left: 1em;
     margin-right: 1em;
 }
